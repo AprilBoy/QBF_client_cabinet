@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>QBF</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="libs/datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    <script src="libs/datepicker/datepicker.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="site flex flex_wrap site_gray">
+        <div class="header-mobile">
+            <div class="wrapper flex">
+                <div class="header-mobile__logo">
+                    <a href="#"><img src="images/main/logo.svg" alt=""></a>
+                </div>
+                <div class="header-mobile__burger header-mobile__burger--js">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-mobile__close header-mobile__close--js">
+                    <img src="images/main/close-icon.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#"><img src="images/main/logo.svg" alt=""></a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="main.html">Продукты</a>
+                        <ul>
+                            <li><a href="trust-management.html">Доверительное управление</a></li>
+                            <li><a href="brokerage-service.html">Брокерское обслуживание</a></li>
+                            <li><a href="open-funds.html">Открытые паевые фонды</a></li>
+                        </ul>
+                    </li>
+                    <li class="current"><a href="your-case-full.html">Портфель</a></li>
+                    <li><a href="functions.html">функции</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li><a href="account-customer-questionnaire.html">аккаунт</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-exit">
+                <div class="sidebar__line"></div>
+                <a href="#">
+                    <img src="images/main/logout-icon.svg" alt="">
+                    <span>Выход из кабинета</span>
+                </a>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Связь с финансовым советником</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                    <a href="#" class="sidebar__btn">Назначить встречу</a>
+                </div>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Техническая поддержка аккаунта</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="content">
+            <div class="wrapper">
+                <div class="user user_fixed flex">
+                    <div class="user__name">
+                        <img src="images/main/user-icon.svg" alt="">
+                        <span>Кондратий Валерьевич <strong>Гребенщиков</strong></span>
+                    </div>
+                    <div class="user__info flex">
+                        <div class="user__balance flex">
+                            <span class="user__caption">Ваш портфель:</span>
+                            <span class="user__total">375 000 руб</span>
+                            <span class="user__point">•</span>
+                            <a href="#" class="user__replenish">Пополнить <span>></span></a>
+                        </div>
+                        <a href="#" class="user__messages flex">
+                            <span class="user__caption">Сообщения </span>
+                            <div class="user__messages-icon user__messages-icon_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.47 20.93">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <rect class="user__messages-cls-1" x="0.25" y="5.56" width="20.22" height="15.12" rx="0.44" />
+                                                <path class="user__messages-cls-1" d="M20.47,6l-9.69,9a.62.62,0,0,1-.84,0L.25,6" />
+                                                <line class="user__messages-cls-1" x1="7.88" y1="13.12" x2="0.25" y2="20.24" />
+                                                <line class="user__messages-cls-1" x1="20.47" y1="20.24" x2="12.84" y2="13.12" />
+                                                <circle class="user__messages-new-message" cx="20.47" cy="6" r="5" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="user__exit flex">
+                            <span class="user__caption">Выход</span>
+                            <img src="images/main/exit-icon.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="top-panel flex">
+                    <div class="top-panel__title">
+                        <div class="top-panel__title-small">Ваш портфель</div>
+                        <strong>Золотое сечение +</strong>
+                    </div>
+                    <div class="top-panel__links flex">
+                        <a href="define-product.html" class="top-panel__link">
+                            <img src="images/main/header-icon-1.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Подобрать<br> продукты</div>
+                        </a>
+                        <a href="#" class="top-panel__link">
+                            <img src="images/main/header-icon-2.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Что такое<br> ИИС</div>
+                        </a>
+                        <a href="product-catalog.html" class="top-panel__link">
+                            <img src="images/main/header-icon-3.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Каталог<br> продуктов</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-anons-v2 product-anons-v2_top product-anons-v2_in_titles flex">
+                    <div class="product-anons-v2__characteristics flex">
+
+                        <div class="product-anons-v2__top">
+                            <div class="product-anons-v2__img product-anons-v2__img_desktop product-anons-v2__img_right">
+                                <img src="images/GoldeRatio/GoldenRatio-img-desktop.png" alt="">
+                            </div>
+                            <div class="product-anons-v2__img product-anons-v2__img_planshet">
+                                <img src="images/GoldeRatio/GoldenRatio-img-planshet.png" alt="">
+                            </div>
+                            <div class="product-anons-v2__img product-anons-v2__img_mobile">
+                                <img src="images/GoldeRatio/GoldenRatio-img-mobile.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- product-anons-v2 END --->
+
+                <div class="products-block">
+                    <div class="ycf__body">
+                        <div class="ycf__coll-big">
+                            <div class="main__title main__title_min">Отчеты по продукту «Золотое сечение»</div>
+                            <div class="ycf__list-year">
+                                <ul>
+                                    <li><a href="#" class="active">2019</a></li>
+                                    <li><a href="#">2018</a></li>
+                                    <li><a href="#">2017</a></li>
+                                    <li><a href="#">2016</a></li>
+                                </ul>
+                            </div>
+                            <div class="ycf__content">
+                                <div class="ycf__finance">
+                                    <div class="ycf__finance-coll flex">
+                                        <div class="ycf__finance-date">04.05.2019</div>
+                                        <div class="ycf__finance-box">
+                                            <div class="ycf__finance-caption">
+                                                <span>Апрель 2019 — «Золотое сечение». Отчет по продукту.</span>
+                                            </div>
+                                            <a href="#" class="ycf__finance-link">Посмотреть PDF ></a>
+                                        </div>
+                                    </div>
+                                    <div class="ycf__finance-coll flex">
+                                        <div class="ycf__finance-date">04.05.2019</div>
+                                        <div class="ycf__finance-box">
+                                            <div class="ycf__finance-caption">
+                                                <span>Апрель 2019 — «Золотое сечение». Отчет по продукту.</span>
+                                            </div>
+                                            <a href="#" class="ycf__finance-link">Посмотреть PDF ></a>
+                                        </div>
+                                    </div>
+                                    <div class="ycf__finance-coll flex">
+                                        <div class="ycf__finance-date">04.05.2019</div>
+                                        <div class="ycf__finance-box">
+                                            <div class="ycf__finance-caption">
+                                                <span>Апрель 2019 — «Золотое сечение». Отчет по продукту.</span>
+                                            </div>
+                                            <a href="#" class="ycf__finance-link">Посмотреть PDF ></a>
+                                        </div>
+                                    </div>
+                                    <div class="ycf__finance-coll flex">
+                                        <div class="ycf__finance-date">04.05.2019</div>
+                                        <div class="ycf__finance-box">
+                                            <div class="ycf__finance-caption">
+                                                <span>Апрель 2019 — «Золотое сечение». Отчет по продукту.</span>
+                                            </div>
+                                            <a href="#" class="ycf__finance-link">Посмотреть PDF ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ycf__list-year">
+                                <ul>
+                                    <li><a href="#" class="active">2019</a></li>
+                                    <li><a href="#">2018</a></li>
+                                    <li><a href="#">2017</a></li>
+                                    <li><a href="#">2016</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pd__body pd__body_border flex">
+                        <div class="pd__column flex">
+                            <div class="pd__column-icons">
+                                <img src="images/your-case-golden-ratio-product-details/icon.svg" alt="">
+                            </div>
+                            <div class="pd__column-list">
+                                <a href="requisites.html" class="pd__column-link">Пополнить счет</a>
+                                <a href="your-case-golden-ratio-product-reports.html" class="pd__column-link pd__column-link_current">Посмотреть отчеты</a>
+                                <a href="your-case-golden-ratio-signed-contracts.html" class="pd__column-link">Подписанные документы</a>
+                                <a href="your-case-golden-ratio-deposit-and-withdrawal-of-funds.html" class="pd__column-link">Посмотреть ввод / вывод средств</a>
+                                <a href="your-case-golden-ratio-request-for-withdrawal-of-funds.html" class="pd__column-link">Заказать вывод средств</a>
+                                <a href="your-case-golden-ratio-analitics.html" class="pd__column-link">Аналитические обзоры</a>
+                            </div>
+                        </div>
+                        <div class="pd__coll">
+                            <a href="your-case-golden-ratio-product-details.html" class="btn btn_gray">
+                                <span>< На страницу продукта</span>
+                            </a>
+                            <a href="your-case-full.html" class="btn btn_darkgray">
+                                <span>Ваш портфель</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--- product-anons-v2 END --->
+
+                <div class="products-block products-block_gray products-block_pt">
+                    <div class="du-list flex">
+                        <div class="offers flex">
+                            <div class="main__title">Предложения сезона</div>
+                            <div class="offers__body">
+                                <div class="offers__slick">
+                                    <div class="offers__slide">
+                                        <div class="du-list__item du-list__item_offers">
+                                            <div class="iis-icon">
+                                                <img src="images/main/IIS.svg" alt="">
+                                            </div>
+                                            <a class="du-list__contanier" href="trust-management-move-up.html">
+                                                <div class="du-list__name">Движение вверх</div>
+                                                <div class="du-list__subtitle">Доверительное управление</div>
+                                                <div class="du-list__yield">
+                                                    <span>20–25%</span>
+                                                    <div class="du-list__caption">целевая<br> доходность</div>
+                                                </div>
+                                                <div class="du-list__btn btn btn_darkgray">Подробнее</div>
+                                                <div class="du-list__img du-list__img_desktop"><img src="images/faq/Slide-1.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_planshet"><img src="images/faq/Slide-1.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/1-mobile.png" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="offers__slide">
+                                        <div class="du-list__item du-list__item_offers">
+                                            <div class="iis-icon">
+                                                <img src="images/main/IIS.svg" alt="">
+                                            </div>
+                                            <a class="du-list__contanier" href="brokerage-service-base-rate.html">
+                                                <div class="du-list__name">Базовый тариф</div>
+                                                <div class="du-list__subtitle">Брокерское обслуживание</div>
+                                                <div class="du-list__currency flex">
+                                                    <div class="du-list__yield">
+                                                        <span>
+                                                            <strong>0</strong>
+                                                        </span>
+                                                        <div class="du-list__caption">минимальная<br> сумма, руб.</div>
+                                                    </div>
+                                                    <div class="main__currency flex">
+                                                        <div class="main__currency-coll flex">
+                                                            <div class="main__currency-coll_icons">₽</div>
+                                                            <div class="main__currency-coll_name">RUB</div>
+                                                        </div>
+                                                        <div class="main__currency-coll flex">
+                                                            <div class="main__currency-coll_icons">$</div>
+                                                            <div class="main__currency-coll_name">USD</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="du-list__btn btn btn_darkgray">Подробнее</div>
+                                                <div class="du-list__img du-list__img_desktop"><img src="images/faq/Slide-2.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_planshet"><img src="images/faq/Slide-2.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_mobile"><img src="images/brokerage-service/Basic-icon-mobile.png" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="offers__slide">
+                                        <div class="du-list__item du-list__item_offers">
+                                            <div class="iis-icon">
+                                                <img src="images/main/IIS.svg" alt="">
+                                            </div>
+                                            <a class="du-list__contanier" href="trust-management-dividend-strategy.html">
+                                                <div class="du-list__name">Дивидендная стратегия</div>
+                                                <div class="du-list__subtitle">Доверительное управление</div>
+                                                <div class="du-list__yield">
+                                                    <span>13–17%</span>
+                                                    <div class="du-list__caption">целевая<br> доходность</div>
+                                                </div>
+                                                <div class="du-list__btn btn btn_darkgray">Подробнее</div>
+                                                <div class="du-list__img du-list__img_desktop"><img src="images/faq/Slide-3.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_planshet"><img src="images/faq/Slide-3.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/5-mobile.png" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="arrow arrow_prev">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"/></g></g></svg>
+                                    </i>
+                                </a>
+                                <a href="javascript:void(0)" class="arrow arrow_next">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"/></g></g></svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-products">
+                            <div class="main__title">Подобрать продукт</div>
+                            <div class="du-list__item du-list__item_main du-list__item_dark">
+                                <a class="du-list__contanier" href="define-product.html">
+                                    <div class="du-list__name">Определите свой<br> инвестиционный профиль<br> и мы предложим наиболее<br> подходящие для вас продукты</div>
+                                    <div class="du-list__btn btn btn_darkgray">Подобрать продукт</div>
+                                    <div class="du-list__img du-list__img_desktop"><img src="images/faq/7.svg" alt=""></div>
+                                    <div class="du-list__img du-list__img_planshet"><img src="images/faq/7.svg" alt=""></div>
+                                    <div class="du-list__img du-list__img_mobile"><img src="images/faq/7.svg" alt=""></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-bottom">
+                <div class="menu-bottom__wrapper">
+                    <ul>
+                        <li><a href="#">Продукты</a></li>
+                        <li><a href="#">Портфель</a></li>
+                        <li><a href="#">Функции</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Аккаунт</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="footer__content flex">
+                        <div class="footer__links">
+                            <ul>
+                                <li><a href="product-catalog.html">Каталог продуктов</a></li>
+                                <li class="hide_mobile">|</li>
+                                <li><a href="">Конфиденциальность</a></li>
+                                <li class="show_pc">|</li>
+                                <li>Техническая поддержка: <span class="br-mobile"></span> <a href="tel:+74959889821">+7 (495) 988 98 21</a> <span class="gray">•</span> <a href="mailto:MAIL@QBFIN.RU">MAIL@QBFIN.RU</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__copiright">QBF • 2019</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-top">
+        <a href="#"><img src="images/main/scroll-top.png" alt=""></a>
+    </div>
+</body>
+
+</html>

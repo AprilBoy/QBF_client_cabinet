@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>QBF</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- uploader -->
+    <link rel="stylesheet" href="libs/jQuery-File-Upload-9.30.0/css/jquery.fileupload.css">
+    <script src="libs/jQuery-File-Upload-9.30.0/js/vendor/jquery.ui.widget.js"></script>
+    <script src="libs/jQuery-File-Upload-9.30.0/js/jquery.iframe-transport.js"></script>
+    <script src="libs/jQuery-File-Upload-9.30.0/js/jquery.fileupload.js"></script>
+    <!-- uploader END-->
+
+    <script src="libs/mask/jquery.maskedinput.min.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+
+<body>
+
+    <div class="site flex flex_wrap site_gray">
+        <div class="header-mobile">
+            <div class="wrapper flex">
+                <div class="header-mobile__logo">
+                    <a href="#"><img src="images/main/logo.svg" alt=""></a>
+                </div>
+                <div class="header-mobile__burger header-mobile__burger--js">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-mobile__close header-mobile__close--js">
+                    <img src="images/main/close-icon.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#"><img src="images/main/logo.svg" alt=""></a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li class="current">
+                        <a href="main.html">Продукты</a>
+                        <ul>
+                            <li><a href="trust-management.html">Доверительное управление</a></li>
+                            <li><a href="brokerage-service.html">Брокерское обслуживание</a></li>
+                            <li><a href="open-funds.html">Открытые паевые фонды</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="your-case-full.html">Портфель</a></li>
+                    <li><a href="functions.html">Функции</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li><a href="account-customer-questionnaire.html">аккаунт</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-exit">
+                <div class="sidebar__line"></div>
+                <a href="#">
+                    <img src="images/main/logout-icon.svg" alt="">
+                    <span>Выход из кабинета</span>
+                </a>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Связь с финансовым советником</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                    <a href="#" class="sidebar__btn">Назначить встречу</a>
+                </div>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Техническая поддержка аккаунта</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="content">
+            <div class="wrapper">
+                <div class="user user_fixed flex">
+                    <div class="user__name">
+                        <img src="images/main/user-icon.svg" alt="">
+                        <span>Кондратий Валерьевич <strong>Гребенщиков</strong></span>
+                    </div>
+                    <div class="user__info flex">
+                        <div class="user__balance flex">
+                            <span class="user__caption">Ваш портфель:</span>
+                            <span class="user__total">375 000 руб</span>
+                            <span class="user__point">•</span>
+                            <a href="#" class="user__replenish">Пополнить <span>></span></a>
+                        </div>
+                        <a href="#" class="user__messages flex">
+                            <span class="user__caption">Сообщения </span>
+                            <div class="user__messages-icon user__messages-icon_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.47 20.93">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <rect class="user__messages-cls-1" x="0.25" y="5.56" width="20.22" height="15.12" rx="0.44" />
+                                                <path class="user__messages-cls-1" d="M20.47,6l-9.69,9a.62.62,0,0,1-.84,0L.25,6" />
+                                                <line class="user__messages-cls-1" x1="7.88" y1="13.12" x2="0.25" y2="20.24" />
+                                                <line class="user__messages-cls-1" x1="20.47" y1="20.24" x2="12.84" y2="13.12" />
+                                                <circle class="user__messages-new-message" cx="20.47" cy="6" r="5" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="user__exit flex">
+                            <span class="user__caption">Выход</span>
+                            <img src="images/main/exit-icon.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="top-panel top-panel_payment top-panel_brokers flex">
+                    <div class="top-panel__title">
+                        <div class="top-panel__title-small"></div>
+                        <strong>Оформление покупки <span class="greey">• Реквизиты</span></strong>
+                    </div>
+                    <div class="top-panel__title">
+                        <div class="top-panel__title-small">Брокерское обслуживание</div>
+                        <strong><span class="green">Персональный брокер</span></strong>
+                    </div>
+                    <div class="top-panel__images">
+                        <img class="top-panel__images-desktop" class="" src="images/payment-brokers-step-1/Personal-desktop.png" alt="">
+                        <img class="top-panel__images-planshet" class="" src="images/payment-brokers-step-1/Personal-desktop.png" alt="">
+                        <img class="top-panel__images-mobile" class="" src="images/payment-brokers-step-1/Personal-mobile.png" alt="">
+                    </div>
+                </div>
+
+                <div class="payment payment-step4">
+                    <div class="payment__box payment__box_bb">
+                        <div class="payment-step4__caption flex">
+                            <div class="payment-step4__icons-sberbank">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.65 40"><defs><style>.cls-1{fill:#4d824d;fill-rule:evenodd;}</style></defs><title>Ресурс 5</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><path class="cls-1" d="M12.69,11.89,31.31,1.19A21.71,21.71,0,0,0,29,0L12.83,9.27,5.52,5.06A22.91,22.91,0,0,0,4,6.92Z"/><path class="cls-1" d="M12.69,17.12l22.51-13a21.87,21.87,0,0,0-1.79-1.53L12.69,14.5,2.78,8.79a20.32,20.32,0,0,0-1,2Z"/><path class="cls-1" d="M12.69,22.36,38.19,7.7a20.3,20.3,0,0,0-1.36-1.84L12.69,19.74.94,13a21.46,21.46,0,0,0-.57,2.3Z"/><path class="cls-1" d="M12.69,25,.05,17.72c0,.48,0,1,0,1.46A20.83,20.83,0,1,0,39.35,9.66Z"/></g></g></svg>
+                                </i>
+                            </div>
+                            <strong>Реквизиты Сбербанка</strong>
+                        </div>
+                        <div class="payment__block-desc">Банковские реквизиты специального счета ООО ИК «КьюБиЭф» для денежных расчетов по Договору.<br> Для того, чтобы отправить денежные средства по Вашему договор, Вам необходимо предоставить вашему банку реквизиты указанные ниже.</div>
+                        <div class="payment-step4__table">
+                            <div class="payment-step4__items">
+                                <div class="payment-step4__name">Получатель</div>
+                                <div class="payment-step4__value">ООО ИК «КьюБиЭф»</div>
+                            </div>
+                            <div class="payment-step4__items">
+                                <div class="payment-step4__name">ИНН получателя </div>
+                                <div class="payment-step4__value">7733673955</div>
+                            </div>
+                            <div class="payment-step4__items">
+                                <div class="payment-step4__name">Наименование банка</div>
+                                <div class="payment-step4__value">ПАО СБЕРБАНК</div>
+                            </div>
+                            <div class="payment-step4__items">
+                                <div class="payment-step4__name">Расчетный счет </div>
+                                <div class="payment-step4__value">40701.810.0.38000001956</div>
+                            </div>
+                            <div class="payment-step4__items">
+                                <div class="payment-step4__name">Корреспондентский счет</div>
+                                <div class="payment-step4__value">30101.810.4.00000000225</div>
+                            </div>
+                            <div class="payment-step4__items">
+                                <div class="payment-step4__name">БИК</div>
+                                <div class="payment-step4__value">044525593</div>
+                            </div>
+                            <div class="payment-step4__items">
+                                <div class="payment-step4__name">Назначение платежа</div>
+                                <div class="payment-step4__value"><span>Назначение платежа с номером договора (подтягивается)</span></div>
+                            </div>
+                            <div class="payment-step4__items">
+                                <div class="payment-step4__name">Сумма платежа</div>
+                                <div class="payment-step4__value">500 000 рублей</div>
+                            </div>
+                        </div>
+                        <a href="files/Requisites/Requisites-Golden-Ratio-Sberbank.pdf" target="_blank" class="payment-step4__pdf btn">
+                            <i>
+                                <img src="images/payment-DU-requisites-Alfa-Bank/PDF-icon.svg" alt="">
+                            </i>
+                            <span>Распечатать реквизиты</span>
+                        </a>
+                        <div class="payment__mail">
+                            <a href="mailto:mail@mail.ru" class="btn">Отправить почтой</a>
+                        </div>
+                    </div>
+                    <div class="payment__box">
+                        <div class="payment__translation-method">
+                            <div class="payment__translation-method__caption">3 способа перевода средств по реквизитам:</div>
+                            <div class="payment-step3__list">
+                                <ol>
+                                    <li>Вы можете обратиться в отделение своего банка и осуществить перевод.</li>
+                                    <li>Вы можете самостоятельно осуществить перевод через свой онлайн-банк по данным реквизитам.</li>
+                                    <li>Вы можете передать данные реквизиты персональному менеджеру в вашем банке для осуществления перевода.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment__box">
+                        <div class="payment__block active">
+                            <a href="payment-brokers-step-3.html" class="payment__block-btn btn btn_darkgray">Вернуться к реквизитам</a>
+                            <a href="your-case-full.html" class="payment__block-btn btn btn_darkgray">Ваш портфель</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu-bottom">
+                <div class="menu-bottom__wrapper">
+                    <ul>
+                        <li><a href="#">Продукты</a></li>
+                        <li><a href="#">Портфель</a></li>
+                        <li><a href="#">Функции</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Аккаунт</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="footer__content flex">
+                        <div class="footer__links">
+                            <ul>
+                                <li><a href="product-catalog.html">Каталог продуктов</a></li>
+                                <li class="hide_mobile">|</li>
+                                <li><a href="">Конфиденциальность</a></li>
+                                <li class="show_pc">|</li>
+                                <li>Техническая поддержка: <span class="br-mobile"></span> <a href="tel:+74959889821">+7 (495) 988 98 21</a> <span class="gray">•</span> <a href="mailto:MAIL@QBFIN.RU">MAIL@QBFIN.RU</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__copiright">QBF • 2019</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-top">
+        <a href="#"><img src="images/main/scroll-top.png" alt=""></a>
+    </div>
+
+</body>
+
+</html>

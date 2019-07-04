@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>QBF</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/fancybox/fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="site flex flex_wrap site_gray">
+        <div class="header-mobile">
+            <div class="wrapper flex">
+                <div class="header-mobile__logo">
+                    <a href="#"><img src="images/main/logo.svg" alt=""></a>
+                </div>
+                <div class="header-mobile__burger header-mobile__burger--js">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-mobile__close header-mobile__close--js">
+                    <img src="images/main/close-icon.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#"><img src="images/main/logo.svg" alt=""></a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li class="current">
+                        <a href="main.html">Продукты</a>
+                        <ul>
+                            <li><a href="trust-management.html">Доверительное управление</a></li>
+                            <li class="current"><a href="brokerage-service.html">Брокерское обслуживание</a></li>
+                            <li><a href="open-funds.html">Открытые паевые фонды</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="your-case-full.html">Портфель</a></li>
+                    <li><a href="functions.html">функции</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li><a href="">аккаунт</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-exit">
+                <div class="sidebar__line"></div>
+                <a href="#">
+                    <img src="images/main/logout-icon.svg" alt="">
+                    <span>Выход из кабинета</span>
+                </a>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Связь с финансовым советником</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                    <a href="#" class="sidebar__btn">Назначить встречу</a>
+                </div>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Техническая поддержка аккаунта</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="content">
+            <div class="wrapper">
+                <div class="user user_fixed flex">
+                    <div class="user__name">
+                        <img src="images/main/user-icon.svg" alt="">
+                        <span>Кондратий Валерьевич <strong>Гребенщиков</strong></span>
+                    </div>
+                    <div class="user__info flex">
+                        <div class="user__balance flex">
+                            <span class="user__caption">Ваш портфель:</span>
+                            <span class="user__total">375 000 руб</span>
+                            <span class="user__point">•</span>
+                            <a href="#" class="user__replenish">Пополнить <span>></span></a>
+                        </div>
+                        <a href="#" class="user__messages flex">
+                            <span class="user__caption">Сообщения </span>
+                            <div class="user__messages-icon user__messages-icon_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.47 20.93">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <rect class="user__messages-cls-1" x="0.25" y="5.56" width="20.22" height="15.12" rx="0.44" />
+                                                <path class="user__messages-cls-1" d="M20.47,6l-9.69,9a.62.62,0,0,1-.84,0L.25,6" />
+                                                <line class="user__messages-cls-1" x1="7.88" y1="13.12" x2="0.25" y2="20.24" />
+                                                <line class="user__messages-cls-1" x1="20.47" y1="20.24" x2="12.84" y2="13.12" />
+                                                <circle class="user__messages-new-message" cx="20.47" cy="6" r="5" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="user__exit flex">
+                            <span class="user__caption">Выход</span>
+                            <img src="images/main/exit-icon.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="top-panel flex">
+                    <div class="top-panel__title">
+                        <div class="top-panel__title-small">Брокерское обслуживание</div>
+                        <strong>Персональный брокер</strong>
+                    </div>
+                    <div class="top-panel__links flex">
+                        <a href="define-product.html" class="top-panel__link">
+                            <img src="images/main/header-icon-1.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Подобрать<br> продукты</div>
+                        </a>
+                        <a href="#" class="top-panel__link">
+                            <img src="images/main/header-icon-2.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Что такое<br> ИИС</div>
+                        </a>
+                        <a href="product-catalog.html" class="top-panel__link">
+                            <img src="images/main/header-icon-3.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Каталог<br> продуктов</div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="product-anons-v2 product-anons-v2_tarif flex">
+
+                    <div class="product-anons-v2__body">
+
+                        <div class="product-anons-v2__link">Продукт подключен</div>
+
+                        <div class="product-anons-v2__characteristics flex">
+
+                            <div class="product-anons-v2__top product-anons-v2__top_new" style="background-color: #b6cb51;">
+                               <div class="product-anons-v2__img product-anons-v2__img_desktop">
+                                    <img src="images/brokerage-service-personal-broker/Personal-broker-desktop.png" alt="">
+                                </div>
+                                <div class="product-anons-v2__img product-anons-v2__img_planshet">
+                                    <img src="images/brokerage-service-personal-broker/Personal-broker-planshet.png" alt="">
+                                </div>
+                                <div class="product-anons-v2__img product-anons-v2__img_mobile">
+                                    <img src="images/brokerage-service-personal-broker/Personal-broker-mobile-v2.png" alt="">
+                                </div>
+                                <div class="product-anons-v2__block">
+                                    <div class="product-anons__name">Персональный брокер</div>
+                                    <div class="poduct-anons-v2__info oduct-anons-v2__info_new flex">
+                                        <div class="product-anons-v2__info-item">
+                                            <div class="product-anons-v2__info-value">500 000</div>
+                                            <div class="product-anons-v2__info-name">минимальная<br> сумма, руб.*</div>
+                                        </div>
+                                        <div class="product-anons__currency">
+                                            <div class="product-anons__currency-items flex">
+                                                <strong>₽</strong>
+                                                <span>RUB</span>
+                                            </div>
+                                            <div class="product-anons__currency-items flex">
+                                                <strong>$</strong>
+                                                <span>USD</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-anons-v2__tariffs flex">
+                                <div class="product-anons-v2__tariffs-title">Наши тарифы</div>
+                                <div class="product-anons-v2__tariffs-link">
+                                    <a href="files/brokery-tarify/Personal-broker-Tariffs.pdf" target="_blank" class="product-anons-v2__tariffs-btn" style="background-color: #acba45;" data-src="#info-modal" data-fancybox data-modal="true">
+                                        <img src="images/brokerage-service-personal-broker/PDF-icon.svg" alt="">
+                                        <span>Посмотреть<br>тарифы</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bo-list__node">Либо эквивалент в долларах</div>
+                            <div class="product-description">
+                                <p><strong>«Персональный брокер»</strong> — тариф предназначен для клиентов, желающих получать профессиональное содействие в структурировании портфеля, качественные и своевременные торговые рекомендации, а также профессиональную поддержку при подготовке и исполнении сделок</p>
+                            </div>
+
+                            <div class="product-buttons">
+                                <div class="product-buttons__btn">
+                                    <a href="payment-brokers-step-1.html" class="btn btn_darkgray">Подключить</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-anons-v2__characteristics product-anons-v2__characteristics-noborder flex">
+
+                            <div class="product-anons-v2__top product-anons-v2__top_new" style="background-color: #b6cb51;">
+                               <div class="product-anons-v2__img product-anons-v2__img_desktop">
+                                    <img src="images/brokerage-service-base-rate/Base-rate-desktop-2.png" alt="">
+                                </div>
+                                <div class="product-anons-v2__img product-anons-v2__img_planshet">
+                                    <img src="images/brokerage-service-base-rate/Base-rate-planshet-2.png" alt="">
+                                </div>
+                                <div class="product-anons-v2__img product-anons-v2__img_mobile">
+                                    <img src="images/brokerage-service-base-rate/Base-rate-mobile-v2.png" alt="">
+                                </div>
+                                <div class="product-anons-v2__block">
+                                    <div class="product-anons__name">Персональный брокер<br> + ИИС</div>
+                                    <div class="poduct-anons-v2__info oduct-anons-v2__info_new flex">
+                                        <div class="product-anons-v2__info-item">
+                                            <div class="product-anons-v2__info-value">500 000</div>
+                                            <div class="product-anons-v2__info-name">минимальная<br> сумма, руб.*</div>
+                                        </div>
+                                        <div class="product-anons__currency">
+                                            <div class="product-anons__currency-items flex">
+                                                <strong>₽</strong>
+                                                <span>RUB</span>
+                                            </div>
+                                            <div class="product-anons__currency-items flex">
+                                                <strong>$</strong>
+                                                <span>USD</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-anons-v2__tariffs flex">
+                                <div class="product-anons-v2__tariffs-title">Наши тарифы</div>
+                                <div class="product-anons-v2__tariffs-link">
+                                    <a href="files/brokery-tarify/Personal-broker-Tariffs.pdf" target="_blank" class="product-anons-v2__tariffs-btn" style="background-color: #acba45;" data-src="#info-modal" data-fancybox data-modal="true">
+                                        <img src="images/brokerage-service-personal-broker/PDF-icon.svg" alt="">
+                                        <span>Посмотреть<br>тарифы</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bo-list__node">Либо эквивалент в долларах</div>
+                            <div class="product-description">
+                                <p><strong>«Персональный брокер»</strong> — тариф предназначен для клиентов, желающих получать профессиональное содействие в структурировании портфеля, качественные и своевременные торговые рекомендации, а также профессиональную поддержку при подготовке и исполнении сделок.</p>
+                                <p>Индивидуальный инвестиционный счет позволяет Вам увеличить доходность вложений за счет получения налоговых вычетов от государства.</p>
+                            </div>
+                            <div class="product-description__disabled"></div>
+                            <a class="iis-link" href="products-IIS.html">Что такое ИИС? Посмотреть ></a>
+                            <div class="product-buttons">
+                                <div class="product-buttons__btn">
+                                    <a href="payment-brokers-step-1.html" class="btn btn_darkgray">Подключить</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div class="product-anons-v2__description product-anons-v2__description_new">
+                        <div class="we-present">
+                            <div class="we-present__contanier we-present__contanier_new flex">
+                                <div class="we-present__title we-present__title_new">
+                                    Мы<br> предоставляем
+                                </div>
+                                <div class="we-present__items flex">
+                                    <div class="we-present__item we-present__item-new flex">
+                                        <div class="we-present__icon flex">
+                                            <img src="images/brokerage-service/icon-1.svg" alt="">
+                                        </div>
+                                        <div class="we-present__text">
+                                            Доступ на российские<br> биржи
+                                        </div>
+                                    </div>
+                                    <div class="we-present__item we-present__item-new flex">
+                                        <div class="we-present__icon flex">
+                                             <img src="images/brokerage-service/icon-2.svg" alt="">
+                                        </div>
+                                        <div class="we-present__text">
+                                            Технологии<br> интернет-трейдинга
+                                        </div>
+                                    </div>
+                                    <div class="we-present__item we-present__item-new flex">
+                                        <div class="we-present__icon flex">
+                                             <img src="images/brokerage-service/icon-3.svg" alt="">
+                                        </div>
+                                        <div class="we-present__text">Профессиональное<br> сопровождение </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-anons-v2__description-article">
+                            <p><strong>Преимущества брокерского обслуживания для клиентов</strong></p>
+                            <ul>
+                                <li>Индивидуальный инвестиционный портфель с полным контролем его структуры и состояния сделок.</li>
+                                <li>Самостоятельное принятие решений о моменте покупки/продажи ценных бумаг.</li>
+                                <li>Аналитическое и консультационное сопровождение клиентов на  каждом этапе работы.</li>
+                                <li>Отсутствие ограничений по сроку инвестирования.</li>
+                                <li>Возможность совершать операции с ценными бумагами на различных торговых системах.</li>
+                                <li>Максимальная ликвидность в любой момент времени.</li>
+                                <li>Возможность работы с производными финансовыми инструментами (фьючерсы опционы).</li>
+                            </ul>
+                        </div>
+                        <div class="products-block__btn">
+                            <a href="brokerage-service.html" class="btn btn_with_img flex">
+                                <div>
+                                    <img src="images/main-page/icon-1.svg" alt="">
+                                </div>
+                                <span>Все предложения Брокерского обслуживания</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-block products-block_pb products-block_gray products-block_pt">
+                    <div class="du-list offer-bo flex">
+                        <div class="offer-bo__left">
+                            <div class="main__title">Станьте совладельцем ведущих компаний</div>
+                            <div class="offer-bo__top">
+                                <div class="offer-bo__tab active">Акции</div>
+                                <div class="offer-bo__tab">Облигации</div>
+                            </div>
+                        </div>
+                        <div class="offer-bo__right">
+                            <div class="offer-bo__body active">
+                                <div class="offer-bo__slick">
+                                    <div class="offer-bo__slide">
+                                        <div class="offer-bo__name">ПАО «Лукойл»</div>
+                                        <div class="offer-bo__img">
+                                            <img src="images/brokerage-service/Stock-1.jpg" alt="">
+                                        </div>
+                                        <div class="offer-bo__row flex">
+                                            <div class="offer-bo__coll">
+                                                <div class="offer-bo__value">11,6%</div>
+                                                <div class="offer-bo__desc">потенциал роста</div>
+                                            </div>
+                                            <div class="offer-bo__column">
+                                                <div class="offer-bo__caption">BUY</div>
+                                                <div class="offer-bo__desc">рейтинг</div>
+                                            </div>
+                                        </div>
+
+                                        <a data-fancybox data-type="iframe" data-src="files/MTSS_BUY_REC.pdf"  href="files/MTSS_BUY_REC.pdf" class="offer-bo__link remove-fancybox-mobile">Подробнее</a>
+                                        <a data-src="#invest-modal" data-fancybox data-modal="true" href="#" class="offer-bo__link">Инвестировать</a>
+                                    </div>
+                                    <div class="offer-bo__slide">
+                                        <div class="offer-bo__name">ПАО «МТС»</div>
+                                        <div class="offer-bo__img">
+                                            <img src="images/brokerage-service/Stock-2.jpg" alt="">
+                                        </div>
+                                        <div class="offer-bo__row flex">
+                                            <div class="offer-bo__coll">
+                                                <div class="offer-bo__value">11,3%</div>
+                                                <div class="offer-bo__desc">потенциал роста</div>
+                                            </div>
+                                            <div class="offer-bo__column">
+                                                <div class="offer-bo__caption">BUY</div>
+                                                <div class="offer-bo__desc">рейтинг</div>
+                                            </div>
+                                        </div>
+                                        <a data-fancybox data-type="iframe" data-src="files/MTSS_BUY_REC.pdf"  href="files/MTSS_BUY_REC.pdf" class="offer-bo__link remove-fancybox-mobile">Подробнее</a>
+                                        <a data-src="#invest-modal" data-fancybox data-modal="true" href="#" class="offer-bo__link">Инвестировать</a>
+                                    </div>
+                                    <div class="offer-bo__slide">
+                                        <div class="offer-bo__name">Amplify Transformational<br> Data Sharing ETF</div>
+                                        <div class="offer-bo__img">
+                                            <img src="images/brokerage-service/Stock-3.jpg" alt="">
+                                        </div>
+                                        <div class="offer-bo__row flex">
+                                            <div class="offer-bo__coll">
+                                                <div class="offer-bo__value">19,6%</div>
+                                                <div class="offer-bo__desc">потенциал роста</div>
+                                            </div>
+                                            <div class="offer-bo__column">
+                                                <div class="offer-bo__caption">BUY</div>
+                                                <div class="offer-bo__desc">рейтинг</div>
+                                            </div>
+                                        </div>
+                                        <a data-fancybox data-type="iframe" data-src="files/MTSS_BUY_REC.pdf"  href="files/MTSS_BUY_REC.pdf" class="offer-bo__link remove-fancybox-mobile">Подробнее</a>
+                                        <a data-src="#invest-modal" data-fancybox data-modal="true" href="#" class="offer-bo__link">Инвестировать</a>
+                                    </div>
+                                </div>
+                                <div class="bo-body__arrow bo-body__arrow_left">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"></polyline></g></g></svg>
+                                    </i>
+                                </div>
+                                <div class="bo-body__arrow bo-body__arrow_right">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"></polyline></g></g></svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="offer-bo__body">
+                                <div class="offer-bo__slick">
+                                    <div class="offer-bo__slide">
+                                        <div class="offer-bo__name">Облигации федерального займа</div>
+                                        <div class="offer-bo__img">
+                                            <img src="images/brokerage-service/Bond-1.jpg" alt="">
+                                        </div>
+                                        <div class="offer-bo__row flex">
+                                            <div class="offer-bo__coll">
+                                                <div class="offer-bo__value">8,9%</div>
+                                                <div class="offer-bo__desc">доходность к погашению</div>
+                                            </div>
+                                            <div class="offer-bo__column">
+                                                <div class="offer-bo__caption">BUY</div>
+                                                <div class="offer-bo__desc">рейтинг</div>
+                                            </div>
+                                        </div>
+                                        <a data-fancybox data-type="iframe" data-src="files/MTSS_BUY_REC.pdf"  href="files/MTSS_BUY_REC.pdf" class="offer-bo__link remove-fancybox-mobile">Подробнее</a>
+                                        <a data-src="#invest-modal" data-fancybox data-modal="true" href="#" class="offer-bo__link">Инвестировать</a>
+                                    </div>
+                                    <div class="offer-bo__slide">
+                                        <div class="offer-bo__name">ПАО «НЛМК»</div>
+                                        <div class="offer-bo__img">
+                                            <img src="images/brokerage-service/Bond-2.jpg" alt="">
+                                        </div>
+                                        <div class="offer-bo__row flex">
+                                            <div class="offer-bo__coll">
+                                                <div class="offer-bo__value">4,02%</div>
+                                                <div class="offer-bo__desc">доходность к погашению</div>
+                                            </div>
+                                            <div class="offer-bo__column">
+                                                <div class="offer-bo__caption">BUY</div>
+                                                <div class="offer-bo__desc">рейтинг</div>
+                                            </div>
+                                        </div>
+                                        <a data-fancybox data-type="iframe" data-src="files/MTSS_BUY_REC.pdf"  href="files/MTSS_BUY_REC.pdf" class="offer-bo__link remove-fancybox-mobile">Подробнее</a>
+                                        <a data-src="#invest-modal" data-fancybox data-modal="true" href="#" class="offer-bo__link">Инвестировать</a>
+                                    </div>
+                                    <div class="offer-bo__slide">
+                                        <div class="offer-bo__name">ПАО АФК «Система»</div>
+                                        <div class="offer-bo__img">
+                                            <img src="images/brokerage-service/Bond-3.jpg" alt="">
+                                        </div>
+                                        <div class="offer-bo__row flex">
+                                            <div class="offer-bo__coll">
+                                                <div class="offer-bo__value">10,7%</div>
+                                                <div class="offer-bo__desc">доходность к погашению</div>
+                                            </div>
+                                            <div class="offer-bo__column">
+                                                <div class="offer-bo__caption">BUY</div>
+                                                <div class="offer-bo__desc">рейтинг</div>
+                                            </div>
+                                        </div>
+                                        <a data-fancybox data-type="iframe" data-src="files/MTSS_BUY_REC.pdf"  href="files/MTSS_BUY_REC.pdf" class="offer-bo__link remove-fancybox-mobile">Подробнее</a>
+                                        <a data-src="#invest-modal" data-fancybox data-modal="true" href="#" class="offer-bo__link">Инвестировать</a>
+                                    </div>
+                                </div>
+                                <div class="bo-body__arrow bo-body__arrow_left">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"></polyline></g></g></svg>
+                                    </i>
+                                </div>
+                                <div class="bo-body__arrow bo-body__arrow_right">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"></polyline></g></g></svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="menu-bottom">
+                <div class="menu-bottom__wrapper">
+                    <ul>
+                        <li><a href="#">Продукты</a></li>
+                        <li><a href="#">Портфель</a></li>
+                        <li><a href="#">Функции</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Аккаунт</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="footer__content flex">
+                        <div class="footer__links">
+                            <ul>
+                                <li><a href="product-catalog.html">Каталог продуктов</a></li>
+                                <li class="hide_mobile">|</li>
+                                <li><a href="">Конфиденциальность</a></li>
+                                <li class="show_pc">|</li>
+                                <li>Техническая поддержка: <span class="br-mobile"></span> <a href="tel:+74959889821">+7 (495) 988 98 21</a> <span class="gray">•</span> <a href="mailto:MAIL@QBFIN.RU">MAIL@QBFIN.RU</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__copiright">QBF • 2019</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-top">
+        <a href="#"><img src="images/main/scroll-top.png" alt=""></a>
+    </div>
+
+<div id="invest-modal" style="display: none;">
+    <div class="invest-modal">
+        <div class="invest-modal__body">
+            <div class="invest-modal__text">
+                <p>Уважаемый клиент,</p>
+                <p>Вы можете оформить покупку данной ценной бумаги, подключив услугу брокерского обслуживания и выбрав соответствующий тариф!</p>
+            </div>
+            <div class="invest-modal__row flex">
+                <div class="invest-modal__coll">
+                    <div class="invest-modal__top" style="background-color: #a1cb2b;">
+                        <div class="invest-modal__name">Персональный<br> брокер</div>
+                        <div class="invest-modal__items">
+                            <div class="invest-modal__desc">минимальная сумма</div>
+                            <div class="invest-modal__price">500 000 <small>₽</small></div>
+                            <div class="invest-modal__desc">или эквивалент в $</div>
+                        </div>
+                    </div>
+                    <div class="invest-modal__bottom">
+                        <div class="invest-modal__description">Подключите продукт<br> «Персональный брокер» и получайте профессиональную консультацию в процессе торговли от Вашего персонального брокера.</div>
+                        <a href="brokerage-service-personal-broker.html" class="btn btn_darkgray">Подключить</a>
+                    </div>
+                </div>
+                <div class="invest-modal__coll">
+                    <div class="invest-modal__top" style="background-color: #87b4c6;">
+                        <div class="invest-modal__name">Базовый<br> тариф</div>
+                        <div class="invest-modal__items">
+                            <div class="invest-modal__desc">минимальная сумма</div>
+                            <div class="invest-modal__price">0 <small>₽</small></div>
+                            <div class="invest-modal__desc">или эквивалент в $</div>
+                        </div>
+                    </div>
+                    <div class="invest-modal__bottom">
+                        <div class="invest-modal__description">Для самостоятельного доступа<br> ко всем рынкам – достаточно подключить «Базовый тариф» – начать можно с 1 ценной бумаги!</div>
+                        <a href="brokerage-service-base-rate.html" class="btn btn_darkgray">Подключить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="invest-modal__button">
+                <a href="javascript:void(0)" class="btn btn_small btn_gray">Закрыть</a>
+            </div>
+        </div>
+    </div>
+</div><!-- end invest-modal -->
+
+<div id="info-modal" style="display: none;">
+    <div class="info-modal">
+        <div class="info-modal__top" style="background-color: #aecb45;">
+            <div class="info-modal__subtitle">Брокерское обслуживание</div>
+            <div class="info-modal__title">Персональный брокер</div>
+        </div>
+        <div class="info-modal__body">
+            <div class="info-modal__content">
+                <div class="info-modal__caption">Тариф от оборота</div>
+                <div class="info-modal__desc">
+                    <p><strong>Принцип выбора тарифа:</strong> самостоятельно клиентом в начале месяца.</p>
+                    <p><strong>Начисление комиссии:</strong> расчет ежедневный, но списание ежемесячно, в конце месяца.</p>
+                    <p>Индивидуальные рекомендации аналитиков, торговые идеи, персональный менеджер по инвестициям, помощь при формировании портфеля, ввод / вывод / открытие / закрытие счета — бесплатно.</p>
+                </div>
+                <div class="info-modal__table">
+                    <div class="info-modal__td">
+                        <div class="info-modal__table-title" style="color: rgb(132, 147, 54);">Абонентская плата <small>(в т.ч. депозитарка, quik, ввод / вывод)</small></div>
+                        <div class="info-modal__box">
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>При ежедневном обороте до 6 млн руб.</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>1500 рублей / месяц</small>
+                                </div>
+                            </div>
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>При ежедневном обороте до 6 млн руб.</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>бесплатно</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-modal__td">
+                        <div class="info-modal__table-title" style="color: rgb(132, 147, 54);">Фондовый / Валютный рынок <small>(оборот в день)</small></div>
+                        <div class="info-modal__box">
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>До 5 000 000</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>0,3%</small>
+                                </div>
+                            </div>
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>От 5 000 000 до 20 000 000</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>0,2%</small>
+                                </div>
+                            </div>
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>Свыше 20 000 000</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>0,15%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-modal__td">
+                        <div class="info-modal__table-title" style="color: rgb(132, 147, 54);">Срочный рынок</div>
+                        <div class="info-modal__box">
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>1 контракт</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>10 рублей</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-modal__content">
+                <div class="info-modal__caption">Тариф от прибыли</div>
+                <div class="info-modal__desc">
+                    <p><strong>Принцип выбора тарифа:</strong> самостоятельно клиентом в начале месяца.</p>
+                    <p><strong>Начисление комиссии:</strong> расчет ежедневный, но списание ежемесячно, в конце месяца.</p>
+                    <p>Индивидуальные рекомендации аналитиков, торговые идеи, персональный менеджер по инвестициям, помощь при формировании портфеля, ввод / вывод / открытие / закрытие счета — бесплатно.</p>
+                </div>
+                <div class="info-modal__table">
+                    <div class="info-modal__td">
+                        <div class="info-modal__table-title" style="color: rgb(132, 147, 54);">Абонентская плата <small>(в т.ч. депозитарка, quik, ввод / вывод)</small></div>
+                        <div class="info-modal__box">
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>При ежедневном обороте до 6 млн руб.</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>2500 рублей / месяц</small>
+                                </div>
+                            </div>
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>При ежедневном обороте до 6 млн руб.</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>бесплатно</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-modal__td">
+                        <div class="info-modal__table-title" style="color: rgb(132, 147, 54);">Фондовый рынок</div>
+                        <div class="info-modal__box">
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>От оборота в день</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>0,1%</small>
+                                </div>
+                            </div>
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>SF</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>10%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-modal__td">
+                        <div class="info-modal__table-title" style="color: rgb(132, 147, 54);">Валютный рынок <small>(оборот в день)</small></div>
+                        <div class="info-modal__box">
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>До 5 000 000</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>0,3%</small>
+                                </div>
+                            </div>
+                            <div class="info-modal__items flex" style="color: rgb(132, 147, 54);">
+                                <div class="info-modal__coll">
+                                    <strong>От 5 000 000 до 20 000 000</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>0,2%</small>
+                                </div>
+                            </div>
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>Свыше 20 000 000</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>0,15%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-modal__td">
+                        <div class="info-modal__table-title" style="color: rgb(132, 147, 54);">Срочный рынок</div>
+                        <div class="info-modal__box">
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>1 контракт</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>10 рублей</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="invest-modal__button">
+            <a href="javascript:void(0)" class="btn btn_small btn_gray">Закрыть</a>
+        </div>
+    </div>
+</div><!-- end info-modal -->
+
+</body>
+
+</html>

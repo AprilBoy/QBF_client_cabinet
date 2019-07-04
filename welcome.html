@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>QBF</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="site flex flex_wrap site_gray">
+        <div class="header-mobile">
+            <div class="wrapper flex">
+                <div class="header-mobile__logo">
+                    <a href="#"><img src="images/main/logo.svg" alt=""></a>
+                </div>
+                <div class="header-mobile__burger header-mobile__burger--js">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-mobile__close header-mobile__close--js">
+                    <img src="images/main/close-icon.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#"><img src="images/main/logo.svg" alt=""></a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="main.html">Продукты</a>
+                        <ul>
+                            <li><a href="trust-management.html">Доверительное управление</a></li>
+                            <li><a href="brokerage-service.html">Брокерское обслуживание</a></li>
+                            <li><a href="open-funds.html">Открытые паевые фонды</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="your-case-full.html">Портфель</a></li>
+                    <li><a href="functions.html">функции</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li><a href="">аккаунт</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-exit">
+                <div class="sidebar__line"></div>
+                <a href="#">
+                    <img src="images/main/logout-icon.svg" alt="">
+                    <span>Выход из кабинета</span>
+                </a>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Связь с финансовым советником</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                    <a href="#" class="sidebar__btn">Назначить встречу</a>
+                </div>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Техническая поддержка аккаунта</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="content">
+            <div class="wrapper">
+                <div class="user user_fixed flex">
+                    <div class="user__name">
+                        <img src="images/main/user-icon.svg" alt="">
+                        <span>Кондратий Валерьевич <strong>Гребенщиков</strong></span>
+                    </div>
+                    <div class="user__info flex">
+                        <div class="user__balance flex">
+                            <span class="user__caption">Ваш портфель:</span>
+                            <span class="user__total">375 000 руб</span>
+                            <span class="user__point">•</span>
+                            <a href="#" class="user__replenish">Пополнить <span>></span></a>
+                        </div>
+                        <a href="#" class="user__messages flex">
+                            <span class="user__caption">Сообщения </span>
+                            <div class="user__messages-icon user__messages-icon_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.47 20.93">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <rect class="user__messages-cls-1" x="0.25" y="5.56" width="20.22" height="15.12" rx="0.44" />
+                                                <path class="user__messages-cls-1" d="M20.47,6l-9.69,9a.62.62,0,0,1-.84,0L.25,6" />
+                                                <line class="user__messages-cls-1" x1="7.88" y1="13.12" x2="0.25" y2="20.24" />
+                                                <line class="user__messages-cls-1" x1="20.47" y1="20.24" x2="12.84" y2="13.12" />
+                                                <circle class="user__messages-new-message" cx="20.47" cy="6" r="5" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="user__exit flex">
+                            <span class="user__caption">Выход</span>
+                            <img src="images/main/exit-icon.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="top-panel flex">
+                    <div class="top-panel__title">
+                        <strong>Добро пожаловать!</strong>
+                    </div>
+                    <div class="top-panel__links flex">
+                        <a href="define-product.html" class="top-panel__link">
+                            <img src="images/main/header-icon-1.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Подобрать<br> продукты</div>
+                        </a>
+                        <a href="#" class="top-panel__link">
+                            <img src="images/main/header-icon-2.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Что такое<br> ИИС</div>
+                        </a>
+                        <a href="product-catalog.html" class="top-panel__link">
+                            <img src="images/main/header-icon-3.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Каталог<br> продуктов</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="products-block faq">
+                    <div class="faq__desc">
+                        <strong>Уважаемый Клиент!</strong>
+                        <p>Вы успешно зарегистрировали Кабинет клиента в компании QBF. В кабинете Вы можете ознакомиться с продуктами нашей компании, оформить их покупку и управлять своими действующими портфелями. </p>
+                        <p>Ниже представлены основные функции и возможности Вашего Кабинета. Если у вас возникли какие-то вопросы по работе Кабинета, пожалуйста, свяжитесь с нашими специалистами и мы поможем Вам. Тел:&nbsp;<a href="tel:+74959889821">+7&nbsp;(495)&nbsp;988&nbsp;98&nbsp;21</a> </p>
+                        <p>Постоянная ссылка на эту страницу с описанием возможностей Кабинета находится в разделе Функции - «Навигация по Кабинету».</p>
+                    </div>
+                    <div class="faq__row">
+
+                        <div class="faq__accordion">
+                            <div class="faq__accordion-items flex">
+                                <div class="btn btn_with_img flex">
+                                    <div>
+                                        <img src="images/main-page/icon-1.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__accordion-block">
+                                    <div class="faq__accordion-caption">Продукты</div>
+                                    <div class="faq__accordion-arrow flex">
+                                        <div class="faq__accordion-arrow__caption">
+                                            <span>Развернуть</span>
+                                            <span>Свернуть</span>
+                                        </div>
+                                        <i>
+                                            <span>></span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__content">
+                                <div class="faq__block">
+                                    <p><strong>Предложения сезона</strong>Информация по новым продуктам компании. Самые актуальные предложения сезона по Акциям и Облигациям в рамках Брокерского обслуживания.</p>
+                                    <a href="https://qbfin.ru/cabinet/main.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Доверительное управление</strong>Список основных продуктов компании, предлагаемых в рамках Доверительного управления.</p>
+                                    <p>Доверительное управление  — продукт, который в одинаковой мере востребован как у начинающих, так и у опытных инвесторов. Сам процесс управления активами осуществляется специалистами инвестиционной компании, клиент получает отчеты, в которых видит все основные изменения за период. </p>
+                                    <p>Целевая доходность по стратегиям и результаты управления варьируются, подбор конкретного портфеля основывается на риск-профиле клиента. Стратегии управления активами подобраны под различный клиентский профиль и задачи.</p>
+                                    <a href="trust-management.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Брокерское обслуживание</strong>Услуги компании QBF, предлагаемые в рамках Брокерского обслуживания, а также самые актуальные предложения по Акциям и Облигациям ведущих компаний.</p>
+                                    <p>Брокерское обслуживание – это 2 тарифных плана нашей компании, которые позволяют клиенту самостоятельно торговать ценными бумагами на биржах.
+                                    Нашим Клиентам доступны тарифы: «Базовый» тариф, где все решения клиент принимает самостоятельно и тариф «Персональный брокер», где специалисты нашей компании консультируют клиента в соответствии с его инвестиционным профилем.</p>
+                                    <a href="brokerage-service.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Открытые паевые фонды</strong>Список основных продуктов компании, предлагаемых в рамках Открытых паевых инвестиционных фондов. Основу линейки фондов QBF Asset Management составляют сбалансированные и консервативные стратегии с фиксированной доходностью. </p>
+                                    <p>Достижение целевой доходности открытых паевых фондов (ОПИФ) профиля «Balance» основано на динамичном распределении средств между акциями и облигациями крупнейших компаний, соотношение которых определяется рыночной ситуацией. </p>
+                                    <p>Консервативные «Fix»-стратегии, предполагающие инвестиции в инструменты с фиксированной доходностью, работают на основе портфеля рублевых облигаций надежных эмитентов и ориентированы на получение максимально возможного результата при ограничении уровня риска.</p>
+                                    <a href="open-funds.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__accordion">
+                            <div class="faq__accordion-items flex">
+                                <div class="btn btn_with_img flex">
+                                    <div>
+                                        <img src="images/faq/2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__accordion-block">
+                                    <div class="faq__accordion-caption">Портфель клиента</div>
+                                    <div class="faq__accordion-arrow flex">
+                                        <div class="faq__accordion-arrow__caption">
+                                            <span>Развернуть</span>
+                                            <span>Свернуть</span>
+                                        </div>
+                                        <i>
+                                            <span>></span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__content">
+                                <div class="faq__block">
+                                    <p><strong>Подключенные продукты</strong>Общая структурная информация по всем подключенным продуктам клиента. Доли продуктов в портфеле – распределение всех подключенных продуктов в общем инвестиционном портфеле клиента.</p>
+                                    <p>Вы можете перейти с данной страницы на вкладки по каждому отдельному продукту и ознакомиться с ними подробно. Данные страницы становится доступными после оформления продуктов и внесения средств.</p>
+                                    <a href="your-case-full.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Детализация по подключенным продуктам</strong>Данные страницы становится доступными после оформления продуктов и внесения денежных средств.</p>
+                                    <p>Здесь Вы сможете увидеть всю необходимую информацию по подключенному продукту. Она включает в себя отображение текущей доходности, баланса, тарифа. Список всех ценных бумаг, их стоимость, распределение долей в общем объеме и графики доходности/баланса. </p>
+                                    <p>Перейдя по ссылкам со страниц детальной информации по продукту, клиент может посмотреть отчеты по продуктам, подписанные договоры и посмотреть вводы/выводы денежных средств…</p>
+                                    <a href="your-case-full.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Брокерское обслуживание: покупка/продажа ценных бумаг </strong>Данные страницы становится доступными после подключения тарифа и внесения денежных средств.</p>
+                                    <p>Если Вы подключили один из тарифов Брокерского обслуживания, то вам становиться доступным сервис: «Онлайн заявка на покупку/продажу ценных бумаг».
+                                    Страницу сервиса вы сможете найти также в этом разделе - на странице подключенного тарифа Брокерского обслуживания.
+                                    Это дает вам возможность оперативно по телефону оставить заявку брокеру на покупку/продажу ценных бумаг и Ваша сделка будет реализована.</p>
+                                    <a href="your-case-full.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__accordion">
+                            <div class="faq__accordion-items flex">
+                                <div class="btn btn_with_img flex">
+                                    <div>
+                                        <img src="images/faq/3.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__accordion-block">
+                                    <div class="faq__accordion-caption">Функции кабинета</div>
+                                    <div class="faq__accordion-arrow flex">
+                                        <div class="faq__accordion-arrow__caption">
+                                            <span>Развернуть</span>
+                                            <span>Свернуть</span>
+                                        </div>
+                                        <i>
+                                            <span>></span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__content">
+                                <div class="faq__block no-item">
+                                    <p>На данной странице собраны ссылки на различные страницы ресурса для быстрого доступа к основным функциям и настройкам Кабинета.</p>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Навигация по кабинету </strong>Описание разделов Личного кабинета для понимания основных возможностей портала. Страница, на которой вы находитесь сейчас.</p>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Реквизиты</strong>Быстрый переход на страницу пополнения денежных средств по подключенным продуктам.</p>
+                                    <a href="requisites.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Смена пароля входа в Кабинет</strong>Страница, где Клиент имеет возможность сменить свой пароль входа в Кабинет в любое удобное для него время.</p>
+                                    <a href="password-change-step-1.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+
+                                <div class="faq__block">
+                                    <p><strong>Управление Аккаунтом</strong>Страница, где собраны данные клиента, необходимые для оформления продуктов QBF и обратной связи с компанией. Также здесь находится «Обязательная анкета клиента» и «Анкета определения инвестиционного профиля» для Брокерского обслуживания.</p>
+                                    <a href="client-account.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Часто задаваемые вопросы (FAQ)</strong>На данной странице собраны часто задаваемые вопросы клиентов по продуктам и услугам компании и работе Кабинета. </p>
+                                    <a href="frequently-asked-questions.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Уведомления и сообщения</strong>Страница, куда поступают системные сообщения от компании, уведомления о  изменениях в регламентах компании, информация о новых возможностях Кабинета.</p>
+                                    <a href="notifications-and-messages.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Рассылки</strong>Здесь вы можете подписаться на информационные рассылки компании по продуктам или же отключить уже оформленную ранее подписку на рассылки.</p>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Заявка на конвертацию</strong>На этой странице вы можете оставить заявку на конвертацию денежных средств.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__accordion">
+                            <div class="faq__accordion-items flex">
+                                <div class="btn btn_with_img flex">
+                                    <div>
+                                        <img src="images/faq/4.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__accordion-block">
+                                    <div class="faq__accordion-caption">Реквизиты</div>
+                                    <div class="faq__accordion-arrow flex">
+                                        <div class="faq__accordion-arrow__caption">
+                                            <span>Развернуть</span>
+                                            <span>Свернуть</span>
+                                        </div>
+                                        <i>
+                                            <span>></span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__content">
+                                <div class="faq__block">
+                                    <p><strong>Пополнение баланса по подключенным продуктам</strong>Раздел, где клиент может осуществить перевод денежных средств для пополнения баланса по подключенным продуктам Доверительного управления и Брокерского обслуживания. </p>
+                                    <p>1) Клиент выбирает продукт. 2) Вводит сумму для пополнения средств. 3) Выбирает банк для получения реквизитов на оплату. Осуществляет перевод денежных средств.</p>
+                                    <a href="requisites.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__accordion">
+                            <div class="faq__accordion-items flex">
+                                <div class="btn btn_with_img flex">
+                                    <div>
+                                        <img src="images/faq/5.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__accordion-block">
+                                    <div class="faq__accordion-caption">Аккаунт клиента</div>
+                                    <div class="faq__accordion-arrow flex">
+                                        <div class="faq__accordion-arrow__caption">
+                                            <span>Развернуть</span>
+                                            <span>Свернуть</span>
+                                        </div>
+                                        <i>
+                                            <span>></span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__content">
+                                <div class="faq__block">
+                                    <p><strong>Общие данные</strong>На этой странице собраны данные о клиенте, которые необходимы для оформления продуктов QBF. Это ФИО, email, телефон для связи, паспортные данные, банковские реквизиты и прочие данные. 
+                                    Вы можете здесь оперативно отредактировать Ваши персональные данные в случае из изменения.</p>
+                                    <a href="client-account.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Анкета клиента</strong>Список обязательных вопросов для клиентов при оформлении первой покупки. Данную анкету необходимо обновлять раз в год для подтверждения актуальности ваших данных.</p>
+                                    <a href="account-customer-questionnaire.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Профиль инвестора </strong>Данная анкета предназначена для определения инвестиционного профиля клиента при подключении тарифа «Персональный брокер» в рамках услуги «Брокерское обслуживание». Исходя из этой анкеты наша компания будет консультировать Вас по определенным инвестиционным продуктам. </p>
+                                    <a href="questionnaire-investment-profile.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Смена пароля для входа в Кабинет </strong>Клиент имеет возможность в любое удобное для него время сменить свой пароль входа в Кабинет. Для этого достаточно пройти по ссылке со страницы Аккаунт и получить подтверждение о смене пароля через электронную почту или мобильный телефон.</p>
+                                    <a href="password-change-step-1.html" class="btn btn_small btn_darkgray">Перейти</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__accordion">
+                            <div class="faq__accordion-items flex">
+                                <div class="btn btn_with_img flex">
+                                    <div>
+                                        <img src="images/faq/6.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__accordion-block">
+                                    <div class="faq__accordion-caption">Служба поддержки</div>
+                                    <div class="faq__accordion-arrow flex">
+                                        <div class="faq__accordion-arrow__caption">
+                                            <span>Развернуть</span>
+                                            <span>Свернуть</span>
+                                        </div>
+                                        <i>
+                                            <span>></span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__content">
+                                <div class="faq__block">
+                                    <p><strong>Связь с финансовым советником</strong>На каждой странице Кабинета в левой стороне экрана (компьютер), либо в разделе Меню (мобильные устройства) находится информация для быстрой связи с финансовым советником Клиента. </p>
+                                    <p>Клиент может позвонить в компанию QBF и его оперативно соединят со специалистом. Также здесь есть возможность написать электронное письмо своему финансовому советнику или запланировать встречу на конкретную дату и время.</p>
+                                    <div class="faq__block-btn flex">
+                                        <a  href="mailto:mail@mail.ru" target="_blank" class="btn btn_small btn_darkgray">Написать</a>
+                                        <a href="tel:+74959889821" class="btn btn_small btn_darkgray">Позвонить</a>
+                                    </div>
+                                </div>
+                                <div class="faq__block">
+                                    <p><strong>Связь с технической поддержкой Аккаунта</strong>На каждой странице Кабинета в левой стороне экрана (компьютер), либо в разделе Меню (мобильные устройства) находится информация для быстрой связи с Отделом технической поддержки Аккаунта клиента. </p>
+                                    <p>Клиент может обратиться по телефону или написать письмо в тех поддержку, где ему оперативно ответят на все вопросы, связанные с работой Личного кабинета. </p>
+                                    <div class="faq__block-btn flex">
+                                        <a  href="mailto:mail@mail.ru" target="_blank" class="btn btn_small btn_darkgray">Написать</a>
+                                        <a href="tel:+74959889821" class="btn btn_small btn_darkgray">Позвонить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--- product-anons-v2 END --->
+
+                <div class="products-block products-block_gray products-block_pt">
+
+                    <div class="du-list flex">
+
+                        <div class="offers flex">
+
+                            <div class="main__title">Предложения сезона</div>
+
+                            <div class="offers__body">
+                                <div class="offers__slick">
+                                    <div class="offers__slide">
+                                        <div class="du-list__item du-list__item_offers">
+                                            <div class="iis-icon">
+                                                <img src="images/main/IIS.svg" alt="">
+                                            </div>
+                                            <a class="du-list__contanier" href="trust-management-move-up.html">
+                                                <div class="du-list__name">Движение вверх</div>
+                                                <div class="du-list__subtitle">Доверительное управление</div>
+                                                <div class="du-list__yield">
+                                                    <span>20–25%</span>
+                                                    <div class="du-list__caption">целевая<br> доходность</div>
+                                                </div>
+                                                <div class="du-list__btn btn btn_darkgray">Подробнее</div>
+                                                <div class="du-list__img du-list__img_desktop"><img src="images/faq/Slide-1.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_planshet"><img src="images/faq/Slide-1.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/1-mobile.png" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="offers__slide">
+                                        <div class="du-list__item du-list__item_offers">
+                                            <div class="iis-icon">
+                                                <img src="images/main/IIS.svg" alt="">
+                                            </div>
+                                            <a class="du-list__contanier" href="brokerage-service-base-rate.html">
+                                                <div class="du-list__name">Базовый тариф</div>
+                                                <div class="du-list__subtitle">Брокерское обслуживание</div>
+                                                <div class="du-list__currency flex">
+                                                    <div class="du-list__yield">
+                                                        <span>
+                                                            <strong>0</strong>
+                                                        </span>
+                                                        <div class="du-list__caption">минимальная<br> сумма, руб.</div>
+                                                    </div>
+                                                    <div class="main__currency flex">
+                                                        <div class="main__currency-coll flex">
+                                                            <div class="main__currency-coll_icons">₽</div>
+                                                            <div class="main__currency-coll_name">RUB</div>
+                                                        </div>
+                                                        <div class="main__currency-coll flex">
+                                                            <div class="main__currency-coll_icons">$</div>
+                                                            <div class="main__currency-coll_name">USD</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="du-list__btn btn btn_darkgray">Подробнее</div>
+                                                <div class="du-list__img du-list__img_desktop"><img src="images/faq/Slide-2.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_planshet"><img src="images/faq/Slide-2.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_mobile"><img src="images/brokerage-service/Basic-icon-mobile.png" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="offers__slide">
+                                        <div class="du-list__item du-list__item_offers">
+                                            <a class="du-list__contanier" href="trust-management-dividend-strategy.html">
+                                                <div class="du-list__name">Дивидендная стратегия</div>
+                                                <div class="du-list__subtitle">Доверительное управление</div>
+                                                <div class="du-list__yield">
+                                                    <span>13–17%</span>
+                                                    <div class="du-list__caption">целевая<br> доходность</div>
+                                                </div>
+                                                <div class="du-list__btn btn btn_darkgray">Подробнее</div>
+                                                <div class="du-list__img du-list__img_desktop"><img src="images/faq/Slide-3.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_planshet"><img src="images/faq/Slide-3.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/5-mobile.png" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="arrow arrow_prev">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"/></g></g></svg>
+                                    </i>
+                                </a>
+                                <a href="javascript:void(0)" class="arrow arrow_next">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"/></g></g></svg>
+                                    </i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="main-products">
+
+                            <div class="main__title">Подобрать продукт</div>
+
+                            <div class="du-list__item du-list__item_main du-list__item_dark">
+                                <a class="du-list__contanier" href="define-product.html">
+                                    <div class="du-list__name">Определите свой<br> инвестиционный профиль<br> и мы предложим наиболее<br> подходящие для вас продукты</div>
+                                    <div class="du-list__btn btn btn_darkgray">Подобрать продукт</div>
+                                    <div class="du-list__img du-list__img_desktop"><img src="images/faq/7.svg" alt=""></div>
+                                    <div class="du-list__img du-list__img_planshet"><img src="images/faq/7.svg" alt=""></div>
+                                    <div class="du-list__img du-list__img_mobile"><img src="images/faq/7.svg" alt=""></div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="menu-bottom">
+                <div class="menu-bottom__wrapper">
+                    <ul>
+                        <li><a href="#">Продукты</a></li>
+                        <li><a href="#">Портфель</a></li>
+                        <li><a href="#">Функции</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Аккаунт</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="footer__content flex">
+                        <div class="footer__links">
+                            <ul>
+                                <li><a href="product-catalog.html">Каталог продуктов</a></li>
+                                <li class="hide_mobile">|</li>
+                                <li><a href="">Конфиденциальность</a></li>
+                                <li class="show_pc">|</li>
+                                <li>Техническая поддержка: <span class="br-mobile"></span> <a href="tel:+74959889821">+7 (495) 988 98 21</a> <span class="gray">•</span> <a href="mailto:MAIL@QBFIN.RU">MAIL@QBFIN.RU</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__copiright">QBF • 2019</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-top">
+        <a href="#"><img src="images/main/scroll-top.png" alt=""></a>
+    </div>
+</body>
+
+</html>

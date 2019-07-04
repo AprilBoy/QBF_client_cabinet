@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>QBF</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+
+    <div class="site flex flex_wrap">
+        <div class="header-mobile">
+            <div class="wrapper flex">
+                <div class="header-mobile__logo">
+                    <a href="#"><img src="images/main/logo.svg" alt=""></a>
+                </div>
+                <div class="header-mobile__burger header-mobile__burger--js">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-mobile__close header-mobile__close--js">
+                    <img src="images/main/close-icon.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#"><img src="images/main/logo.svg" alt=""></a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li class="current">
+                        <a href="main.html">Продукты</a>
+                        <ul>
+                            <li class="current"><a href="trust-management.html">Доверительное управление</a></li>
+                            <li><a href="brokerage-service.html">Брокерское обслуживание</a></li>
+                            <li><a href="open-funds.html">Открытые паевые фонды</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="your-case-full.html">Портфель</a></li>
+                    <li><a href="functions.html">функции</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li><a href="account-customer-questionnaire.html">аккаунт</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-exit">
+                <div class="sidebar__line"></div>
+                <a href="#">
+                    <img src="images/main/logout-icon.svg" alt="">
+                    <span>Выход из кабинета</span>
+                </a>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Связь с финансовым советником</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                    <a href="#" class="sidebar__btn">Назначить встречу</a>
+                </div>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Техническая поддержка аккаунта</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="content">
+            <div class="wrapper">
+                <div class="user user_fixed flex">
+                    <div class="user__name">
+                        <img src="images/main/user-icon.svg" alt="">
+                        <span>Кондратий Валерьевич <strong>Гребенщиков</strong></span>
+                    </div>
+                    <div class="user__info flex">
+                        <div class="user__balance flex">
+                            <span class="user__caption">Ваш портфель:</span>
+                            <span class="user__total">375 000 руб</span>
+                            <span class="user__point">•</span>
+                            <a href="#" class="user__replenish">Пополнить <span>></span></a>
+                        </div>
+                        <a href="#" class="user__messages flex">
+                            <span class="user__caption">Сообщения </span>
+                            <div class="user__messages-icon user__messages-icon_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.47 20.93">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <rect class="user__messages-cls-1" x="0.25" y="5.56" width="20.22" height="15.12" rx="0.44" />
+                                                <path class="user__messages-cls-1" d="M20.47,6l-9.69,9a.62.62,0,0,1-.84,0L.25,6" />
+                                                <line class="user__messages-cls-1" x1="7.88" y1="13.12" x2="0.25" y2="20.24" />
+                                                <line class="user__messages-cls-1" x1="20.47" y1="20.24" x2="12.84" y2="13.12" />
+                                                <circle class="user__messages-new-message" cx="20.47" cy="6" r="5" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="user__exit flex">
+                            <span class="user__caption">Выход</span>
+                            <img src="images/main/exit-icon.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="top-panel flex">
+                    <div class="top-panel__title">
+                        <div class="top-panel__title-small">Продукты</div>
+                        <strong>Доверительное управление</strong>
+                    </div>
+                    <div class="top-panel__links flex">
+                        <a href="define-product.html" class="top-panel__link">
+                            <img src="images/main/header-icon-1.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Подобрать<br> продукты</div>
+                        </a>
+                        <a href="#" class="top-panel__link">
+                            <img src="images/main/header-icon-2.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Что такое<br> ИИС</div>
+                        </a>
+                        <a href="product-catalog.html" class="top-panel__link">
+                            <img src="images/main/header-icon-3.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Каталог<br> продуктов</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="filter">
+                    <div class="filter__switcher flex" onclick="$('.filter__form').slideToggle();">
+                        <div class="filter__switcher-icon">
+                            <img src="images/open-fonds/filter-icon.svg" alt="">
+                        </div>
+                        <div class="filter__switcher-title">Фильтр по профилю</div>
+                        <div class="filter__switcher-arrow">
+                            <img src="images/open-fonds/arrow.png" alt="">
+                        </div>
+                    </div>
+                    <form class="filter__form" method="" action="">
+                        <div class="filter__items flex">
+                            <div class="filter__item">
+                                <div class="filter__top">
+                                    <label class="radio">
+                                        <input type="radio" name="type" class="radio__input">
+                                        <span class="radio__theme"></span>
+                                        <span class="radio__caption">
+                                            Профиль: <span class="green">Консервативный</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="filter__bottom">
+                                    <div class="filter__desription">
+                                        Для консервативных инвесторов, которые ценят надежность, минимальные риски и ориентированы на долгосрочные инвестиции.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__top">
+                                    <label class="radio">
+                                        <input type="radio" name="type" class="radio__input">
+                                        <span class="radio__theme"></span>
+                                        <span class="radio__caption">
+                                            Профиль: <span class="green">Умеренный</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="filter__bottom">
+                                    <div class="filter__desription">
+                                        Для инвесторов, желающих найти “золотую середину” в финансовых продуктах: расширенный набор инструментов, доходность выше депозита и гибкие стратегии управления.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__top">
+                                    <label class="radio">
+                                        <input type="radio" name="type" class="radio__input">
+                                        <span class="radio__theme"></span>
+                                        <span class="radio__caption">
+                                            Профиль: <span class="green">Активный</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="filter__bottom">
+                                    <div class="filter__desription">
+                                        Для инвесторов, которые ожидают повышенную доходность, понимают риски фондового рынка и готовы рассматривать широкий набор финансовых инструментов.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__buttons flex">
+                            <input type="submit" class="btn btn_small" value="Применить">
+                            <input type="reset" class="btn btn_small" value="Сбросить">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="products-block products-block_pt  products-block_pb_not">
+                    <div class="du-list flex">
+
+                        <div class="du-list__item">
+                            <div class="iis-icon">
+                                <img src="images/main/IIS.svg" alt="">
+                            </div>
+                            <a class="du-list__contanier" href="trust-management-move-up.html">
+                                <div class="du-list__name">Движение<br> вверх</div>
+                                <div class="du-list__yield">20–25%</div>
+                                <div class="du-list__caption">целевая<br> доходность</div>
+                                <div class="du-list__img du-list__img_desktop"><img src="images/trust-management/1-desktop.png" alt=""></div>
+                                <div class="du-list__img du-list__img_planshet"><img src="images/trust-management/1-planshet.png" alt=""></div>
+                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/1-mobile.png" alt=""></div>
+                            </a>
+                            <div class="du-list__description">Стратегия подходит инвесторам, ориентированным на повышенную доходность на российском рынке ценных бумаг.</div>
+                            <a class="iis-link" href="products-IIS.html">Услуга доступна также в рамках ИИС</a>
+                            <a class="du-list__btn btn btn_darkgray" href="trust-management-move-up.html">Подробнее</a>
+                        </div>
+
+                        <div class="du-list__item">
+                            <a class="du-list__contanier" href="trust-management-global-market.html">
+                                <div class="du-list__name">Глобальные<br> рынки</div>
+                                <div class="du-list__yield">10–15%</div>
+                                <div class="du-list__caption">целевая<br> доходность</div>
+                                <div class="du-list__img du-list__img_desktop"><img src="images/trust-management/2-desktop.png" alt=""></div>
+                                <div class="du-list__img du-list__img_planshet"><img src="images/trust-management/2-planshet.png" alt=""></div>
+                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/2-mobile.png" alt=""></div>
+                            </a>
+                            <div class="du-list__description">Стратегия создана для инвесторов, заинтересованных в получении повышенного дохода на мировом рынке ценных бумаг в сравнительно короткие сроки.</div>
+                            <a class="du-list__btn btn btn_darkgray" href="trust-management-global-market.html">Подробнее</a>
+                        </div>
+
+                        <div class="du-list__item">
+                            <div class="iis-icon">
+                                <img src="images/main/IIS.svg" alt="">
+                            </div>
+                            <a class="du-list__contanier" href="trust-management-golden-ratio.html">
+                                <div class="du-list__name">Золотое<br> сечение</div>
+                                <div class="du-list__yield">15–20%</div>
+                                <div class="du-list__caption">целевая<br> доходность</div>
+                                <div class="du-list__img du-list__img_desktop"><img src="images/trust-management/3-desktop.png" alt=""></div>
+                                <div class="du-list__img du-list__img_planshet"><img src="images/trust-management/3-planshet.png" alt=""></div>
+                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/3-mobile.png" alt=""></div>
+                            </a>
+                            <div class="du-list__description">Основа стратегии — акции крупнейших российских компаний, что позволяет инвестору потенциально получать прибыль за счет роста отечественного корпоративного сектора.</div>
+                            <a class="iis-link" href="products-IIS.html">Услуга доступна также в рамках ИИС</a>
+                            <a class="du-list__btn btn btn_darkgray" href="trust-management-golden-ratio.html">Подробнее</a>
+                        </div>
+
+                    </div>
+
+                    <div class="du-list flex">
+
+
+                        <div class="du-list__item">
+                            <div class="iis-icon">
+                                <img src="images/main/IIS.svg" alt="">
+                            </div>
+                            <a class="du-list__contanier" href="trust-management-my-safe.html">
+                                <div class="du-list__name">Мой<br> сейф</div>
+                                <div class="du-list__yield">9–10%</div>
+                                <div class="du-list__caption">целевая<br> доходность</div>
+                                <div class="du-list__img du-list__img_desktop"><img src="images/trust-management/4-desktop.png" alt=""></div>
+                                <div class="du-list__img du-list__img_planshet"><img src="images/trust-management/4-planshet.png" alt=""></div>
+                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/4-mobile.png" alt=""></div>
+                            </a>
+                            <div class="du-list__description">Облигационная стратегия, основанная на покупке облигаций крупнейших российских компаний. Целевой доход генерируется за счет купона и роста стоимости ценных бумаг.</div>
+                            <a class="iis-link" href="products-IIS.html">Услуга доступна также в рамках ИИС</a>
+                            <a class="du-list__btn btn btn_darkgray" href="trust-management-my-safe.html">Подробнее</a>
+                        </div>
+
+                        <div class="du-list__item">
+                            <a class="du-list__contanier" href="trust-management-dividend-strategy.html">
+                                <div class="du-list__name">Дивидендная<br> стратегия</div>
+                                <div class="du-list__yield">13–17%</div>
+                                <div class="du-list__caption">целевая<br> доходность</div>
+                                <div class="du-list__img du-list__img_desktop"><img src="images/trust-management/5-desktop.png" alt=""></div>
+                                <div class="du-list__img du-list__img_planshet"><img src="images/trust-management/5-planshet.png" alt=""></div>
+                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/5-mobile.png" alt=""></div>
+                            </a>
+                            <div class="du-list__description">Основа стратегии — акции крупнейших российских компаний, что позволяет инвестору потенциально получать прибыль за счет роста отечественного корпоративного сектора.</div>
+                            <a class="du-list__btn btn btn_darkgray" href="trust-management-dividend-strategy.html">Подробнее</a>
+                        </div>
+
+                        <div class="du-list__item">
+                            <a class="du-list__contanier" href="trust-management-reasonable-investor.html">
+                                <div class="du-list__name">Разумный<br> инвестор</div>
+                                <div class="du-list__yield">10–15%</div>
+                                <div class="du-list__caption">целевая<br> доходность</div>
+                                <div class="du-list__img du-list__img_desktop"><img src="images/trust-management/6-desktop.png" alt=""></div>
+                                <div class="du-list__img du-list__img_planshet"><img src="images/trust-management/6-planshet.png" alt=""></div>
+                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/6-mobile.png" alt=""></div>
+                            </a>
+                            <div class="du-list__description">Продукт «Разумный инвестор» – это оптимальное соотношение риска и доходности в рамках стратегии, которая открывает возможность получения прибыли<br> за счет роста отечественного корпоративного сектора.</div>
+                            <a class="du-list__btn btn btn_darkgray" href="trust-management-reasonable-investor.html">Подробнее</a>
+                        </div>
+
+                    </div>
+
+                    <div class="du-list flex">
+
+                        <div class="du-list__item">
+                            <a class="du-list__contanier" href="trust-management-on-demand.html">
+                                <div class="du-list__name">До<br> востребования</div>
+                                <div class="du-list__yield">7–8%</div>
+                                <div class="du-list__caption">целевая<br> доходность</div>
+                                <div class="du-list__img du-list__img_desktop"><img src="images/trust-management/7-desktop.png" alt=""></div>
+                                <div class="du-list__img du-list__img_planshet"><img src="images/trust-management/7-planshet.png" alt=""></div>
+                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/7-mobile.png" alt=""></div>
+                            </a>
+                            <div class="du-list__description">Альтернатива банковскому депозиту с использованием инструментов фондового рынка.</div>
+                            <a class="du-list__btn btn btn_darkgray" href="trust-management-on-demand.html">Подробнее</a>
+                        </div>
+
+                        <div class="du-list__item">
+                            <div class="iis-icon">
+                                <img src="images/main/IIS.svg" alt="">
+                            </div>
+                            <a class="du-list__contanier" href="trust-management-state-guarantee.html">
+                                <div class="du-list__name">Гарантия<br> государства</div>
+                                <div class="du-list__yield">8–9%</div>
+                                <div class="du-list__caption">целевая<br> доходность</div>
+                                <div class="du-list__img du-list__img_desktop"><img src="images/trust-management/8-desktop.png" alt=""></div>
+                                <div class="du-list__img du-list__img_planshet"><img src="images/trust-management/8-planshet.png" alt=""></div>
+                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/8-mobile.png" alt=""></div>
+                            </a>
+                            <div class="du-list__description">Стратегия подходит клиентам, основная цель которых – обеспечить максимальную защиту своего капитала.</div>
+                            <a class="iis-link" href="products-IIS.html">Услуга доступна также в рамках ИИС</a>
+                            <a class="du-list__btn btn btn_darkgray" href="trust-management-state-guarantee.html">Подробнее</a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="du-list flex">
+                        <div class="du-list__bottom flex">
+                            <div class="du-list__bottom-img">
+                                <img src="images/Cabinet-Login/img-1-desktop-planshet.png" alt="">
+                            </div>
+                            <div class="du-list__description"><strong>Доверительное управление активами</strong> — услуга, которая в одинаковой мере востребована как у начинающих, так и у опытных инвесторов. Целевая доходность по стратегиям и результаты управления варьируются, подбор конкретного портфеля основывается на риск-профиле клиента. Стратегии управления активами подобраны под различный клиентский профиль и задачи.</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="menu-bottom">
+                <div class="menu-bottom__wrapper">
+                    <ul>
+                        <li><a href="#">Продукты</a></li>
+                        <li><a href="#">Портфель</a></li>
+                        <li><a href="#">Функции</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Аккаунт</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="footer__content flex">
+                        <div class="footer__links">
+                            <ul>
+                                <li><a href="product-catalog.html">Каталог продуктов</a></li>
+                                <li class="hide_mobile">|</li>
+                                <li><a href="">Конфиденциальность</a></li>
+                                <li class="show_pc">|</li>
+                                <li>Техническая поддержка: <span class="br-mobile"></span> <a href="tel:+74959889821">+7 (495) 988 98 21</a> <span class="gray">•</span> <a href="mailto:MAIL@QBFIN.RU">MAIL@QBFIN.RU</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__copiright">QBF • 2019</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-top">
+        <a href="#"><img src="images/main/scroll-top.png" alt=""></a>
+    </div>
+</body>
+
+</html>

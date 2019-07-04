@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>QBF</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css?21">
+    <link rel="stylesheet" href="css/style.css?22">
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- uploader -->
+    <link rel="stylesheet" href="libs/jQuery-File-Upload-9.30.0/css/jquery.fileupload.css">
+    <script src="libs/jQuery-File-Upload-9.30.0/js/vendor/jquery.ui.widget.js"></script>
+    <script src="libs/jQuery-File-Upload-9.30.0/js/jquery.iframe-transport.js"></script>
+    <script src="libs/jQuery-File-Upload-9.30.0/js/jquery.fileupload.js"></script>
+    <!-- uploader END-->
+
+    <script src="js/common.js?242"></script>
+</head>
+
+<body>
+
+    <div class="site flex flex_wrap ">
+        <div class="header-mobile">
+            <div class="wrapper flex">
+                <div class="header-mobile__logo">
+                    <a href="#"><img src="images/main/logo.svg" alt=""></a>
+                </div>
+                <div class="header-mobile__burger header-mobile__burger--js">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-mobile__close header-mobile__close--js">
+                    <img src="images/main/close-icon.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#"><img src="images/main/logo.svg" alt=""></a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="main.html">Продукты</a>
+                        <ul>
+                            <li><a href="trust-management.html">Доверительное управление</a></li>
+                            <li><a href="brokerage-service.html">Брокерское обслуживание</a></li>
+                            <li><a href="open-funds.html">Открытые паевые фонды</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="your-case-full.html">Портфель</a></li>
+                    <li><a href="functions.html">функции</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li class="current"><a href="account-customer-questionnaire.html">аккаунт</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-exit">
+                <div class="sidebar__line"></div>
+                <a href="#">
+                    <img src="images/main/logout-icon.svg" alt="">
+                    <span>Выход из кабинета</span>
+                </a>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Связь с финансовым советником</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                    <a href="#" class="sidebar__btn">Назначить встречу</a>
+                </div>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Техническая поддержка аккаунта</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="content">
+            <div class="wrapper">
+                <div class="user user_fixed flex">
+                    <div class="user__name">
+                        <img src="images/main/user-icon.svg" alt="">
+                        <span>Кондратий Валерьевич <strong>Гребенщиков</strong></span>
+                    </div>
+                    <div class="user__info flex">
+                        <div class="user__balance flex">
+                            <span class="user__caption">Ваш портфель:</span>
+                            <span class="user__total">375 000 руб</span>
+                            <span class="user__point">•</span>
+                            <a href="#" class="user__replenish">Пополнить <span>></span></a>
+                        </div>
+                        <a href="#" class="user__messages flex">
+                            <span class="user__caption">Сообщения </span>
+                            <div class="user__messages-icon user__messages-icon_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.47 20.93">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <rect class="user__messages-cls-1" x="0.25" y="5.56" width="20.22" height="15.12" rx="0.44" />
+                                                <path class="user__messages-cls-1" d="M20.47,6l-9.69,9a.62.62,0,0,1-.84,0L.25,6" />
+                                                <line class="user__messages-cls-1" x1="7.88" y1="13.12" x2="0.25" y2="20.24" />
+                                                <line class="user__messages-cls-1" x1="20.47" y1="20.24" x2="12.84" y2="13.12" />
+                                                <circle class="user__messages-new-message" cx="20.47" cy="6" r="5" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="user__exit flex">
+                            <span class="user__caption">Выход</span>
+                            <img src="images/main/exit-icon.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="top-panel flex">
+                    <div class="top-panel__title ">
+                        <div class="top-panel__title-small">Аккаунт</div>
+                        <strong>Управление аккаунтом</strong>
+                    </div>
+                    <div class="top-panel__links flex">
+                        <a href="define-product.html" class="top-panel__link">
+                            <img src="images/main/header-icon-1.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Подобрать<br> продукты</div>
+                        </a>
+                        <a href="#" class="top-panel__link">
+                            <img src="images/main/header-icon-2.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Что такое<br> ИИС</div>
+                        </a>
+                        <a href="product-catalog.html" class="top-panel__link">
+                            <img src="images/main/header-icon-3.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Каталог<br> продуктов</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="settings">
+                    <div class="settings__row flex">
+                        <div class="settings__col">
+                            <div class="settings__title settings__title--js">
+                                <div class="settings__title-caption">
+                                    <span>Пользователь аккаунта</span>
+                                    <small>имя • отчество • фамилия • дата рождения • электронная почта • телефон</small>
+                                </div>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"></polyline></g></g></svg>
+                                </i>
+                            </div>
+                            <div class="settings__items settings__items_client settings__items--js settings__items_hide">
+                                <form action="" class="settings__form">
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">имя</div>
+                                        <input type="text" class="settings__field field" value="Кондратий">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">Отчество</div>
+                                        <input type="text" class="settings__field field" value="Валерьевич">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">фамилия</div>
+                                        <input type="text" class="settings__field field" value="Гребенщиков">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">дата рождения</div>
+                                        <input type="text" class="settings__field field" value="23.05.1980">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">Электронная почта</div>
+                                        <input type="text" class="settings__field field" value="grebenshikov@mail.ru">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">доп. электронная почта</div>
+                                        <input type="text" class="settings__field field" value="grebenshikov@ya.ru">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">телефон</div>
+                                        <input type="text" class="settings__field field" value="+7 911 876 54 32">
+                                    </label>
+                                    <div class="settings__buttons flex">
+                                        <div class="settings__button">
+                                            <input type="button" class="btn btn_darkgray" value="Принять">
+                                        </div>
+                                    </div>
+                                    <div class="settings__status">
+                                        Статус: <span class="success">подтвержден</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="settings__col">
+                            <div class="settings__title  settings__title--js">
+                                <div class="settings__title-caption">
+                                    <span>Паспортные данные</span>
+                                    <small>серия / номер • кем выдан • дата выдачи • код подразделения • место рождения</small>
+                                </div>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"></polyline></g></g></svg>
+                                </i>
+                            </div>
+                            <div class="settings__items settings__items_client settings__items--js settings__items_hide">
+                                <form action="" class="settings__form">
+                                    <div class="settings__passport flex">
+                                        <label class="settings__label settings__passport-series">
+                                            <div class="settings__field-name">Серия</div>
+                                            <input type="text" class="settings__field field" value="93 18">
+                                        </label>
+                                        <span> – </span>
+                                        <label class="settings__label settings__passport-number">
+                                            <div class="settings__field-name">Номер</div>
+                                            <input type="text" class="settings__field field" value="275 98 76">
+                                        </label>
+                                    </div>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">Кем выдан</div>
+                                        <input type="text" class="settings__field field" value="УФМС Ленинградской обл., гор. Санкт-Петербурга">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">Дата выдачи</div>
+                                        <input type="text" class="settings__field field" value="23.05.1994">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">Код подразделения</div>
+                                        <input type="text" class="settings__field field" value="123 - 456">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">Место рождения</div>
+                                        <input type="text" class="settings__field field" value="Санкт-Петербург">
+                                    </label>
+                                    <label class="settings__label ">
+                                        <div class="settings__field-name">Загрузить скан паспорта</div>
+                                        <div class="files settings__files">
+                                            <span class="fileinput-button">
+                                                <span class="btn btn_small">Загрузить файл ></span>
+                                                <input id="fileupload-3" type="file" name="files" >
+                                            </span>
+                                            <div id="files-3" class="files__list files__list_v2"></div>
+                                        </div>
+                                    </label>
+                                    <div class="settings__buttons flex">
+                                        <div class="settings__button">
+                                            <input type="button" class="btn btn_darkgray" value="Принять">
+                                        </div>
+                                    </div>
+                                    <div class="settings__status">
+                                        Статус: <span class="success">подтвержден</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="settings__col">
+                            <div class="settings__title  settings__title--js">
+                                <div class="settings__title-caption">
+                                    <span class="error">Банковские реквизиты</span>
+                                    <small>бик • наименование банка • корреспондентский счет • расчетный счет</small>
+                                </div>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"></polyline></g></g></svg>
+                                </i>
+                            </div>
+                            <div class="settings__items settings__items_client settings__items--js settings__items_hide">
+                                <form action="" class="settings__form">
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">БИК</div>
+                                        <input type="text" class="settings__field field" value="044525225">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">Наименование банка</div>
+                                        <input type="text" class="settings__field field" value="ООО «Альфа Банк»">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">Корреспондентский счет</div>
+                                        <input type="text" class="settings__field field" value="30101643600000000957">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">Номер расчетного счера получателя</div>
+                                        <input type="text" class="settings__field field field_error" value="111 22 333 4 5555 6666666">
+                                    </label>
+
+                                    <div class="settings__buttons flex">
+                                        <div class="settings__button">
+                                            <input type="button" class="btn btn_darkgray" value="Принять">
+                                        </div>
+                                    </div>
+                                    <div class="settings__status">
+                                        Статус: <span class="error">не подтвержден</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="settings__col">
+                            <div class="settings__title  settings__title--js">
+                                <div class="settings__title-caption">
+                                    <span>Прочие данные</span>
+                                    <small>Инн • СНИЛС • Адрес регистрации • почтовый адрес</small>
+                                </div>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"></polyline></g></g></svg>
+                                </i>
+                            </div>
+                            <div class="settings__items settings__items_client settings__items--js settings__items_hide">
+                                <form action="" class="settings__form">
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">ИНН</div>
+                                        <input type="text" class="settings__field field" value="123456789123">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">СНИЛС</div>
+                                        <input type="text" class="settings__field field" value="123 - 456 - 789 - 12">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">Адрес регистрации</div>
+                                        <input type="text" class="settings__field field" value="Санкт-Петербург, ул. Рубинштейна, 13">
+                                    </label>
+                                    <label class="settings__label">
+                                        <div class="settings__field-name">Почтовый адрес</div>
+                                        <input type="text" class="settings__field field" value="140145, Санкт-Петербург, ул. Рубинштейна, 13">
+                                    </label>
+                                    <div class="settings__buttons flex">
+                                        <div class="settings__button">
+                                            <input type="button" class="btn btn_darkgray" value="Принять">
+                                        </div>
+                                    </div>
+                                    <div class="settings__status">
+                                        Статус: <span class="success">подтвержден</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings__row settings__row_last flex">
+                        <div class="settings__col">
+                            <div class="settings__title">Смена пароля для входа в Кабинет</div>
+                            <div class="settings__items settings__items_change_password">
+                                <div class="settings__items-password">
+                                    <div class="settings__description">Для смены пароля входа в Личный кабинет нажмите на кнопку и следуйте инструкциям.</div>
+                                    <a href="password-change-step-1.html" class="btn btn_darkgray">Сменить пароль</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings__col">
+                            <div class="settings__title">Анкеты клиента</div>
+                            <div class="settings__items settings__items_anketa">
+                                 <div class="settings__anketa flex">
+                                    <div class="settings__anketa-icon">
+                                        <img src="images/client-account/icon.svg" alt="">
+                                    </div>
+                                    <div class="settings__anketa-content">
+                                        <div class="settings__description">
+                                            <p>«Анкета клиента» - список обязательных вопросов для клиентов. Ее необходимо обновлять раз в год.</p>
+                                            <p>«Профиль инвестора» - анкета определения вашего оптимального инвестиционного профиля.</p>
+                                        </div>
+                                        <a href="account-customer-questionnaire.html" class="btn btn_gray">Анкета клиента</a>
+                                        <a href="questionnaire-investment-profile.html" class="btn btn_gray">Профиль инвестора</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings__links">
+                        <a target="_blank" href="files/SOGLASIE-obrabotka-PD-Klienty.pdf" class="settings__link">Согласие на Обработку персональных данных ></a>
+                        <a target="_blank" href="files/Perechen-EDO-ot-2018.11.14.pdf" class="settings__link">Согласие на Электронный документооборот (ЭДО) ></a>
+                        <a href="#" class="settings__link">Максимальная сумма инвестирования на ИИС ></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="menu-bottom">
+                <div class="menu-bottom__wrapper">
+                    <ul>
+                        <li><a href="#">Продукты</a></li>
+                        <li><a href="#">Портфель</a></li>
+                        <li><a href="#">Функции</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Аккаунт</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="footer__content flex">
+                        <div class="footer__links">
+                            <ul>
+                                <li><a href="product-catalog.html">Каталог продуктов</a></li>
+                                <li class="hide_mobile">|</li>
+                                <li><a href="">Конфиденциальность</a></li>
+                                <li class="show_pc">|</li>
+                                <li>Техническая поддержка: <span class="br-mobile"></span> <a href="tel:+74959889821">+7 (495) 988 98 21</a> <span class="gray">•</span> <a href="mailto:MAIL@QBFIN.RU">MAIL@QBFIN.RU</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__copiright">QBF • 2019</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-top">
+        <a href="#"><img src="images/main/scroll-top.png" alt=""></a>
+    </div>
+</body>
+
+</html>

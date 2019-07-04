@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>QBF</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/fancybox/fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="libs/datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    <script src="libs/datepicker/datepicker.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="site flex flex_wrap site_gray">
+        <div class="header-mobile">
+            <div class="wrapper flex">
+                <div class="header-mobile__logo">
+                    <a href="#"><img src="images/main/logo.svg" alt=""></a>
+                </div>
+                <div class="header-mobile__burger header-mobile__burger--js">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-mobile__close header-mobile__close--js">
+                    <img src="images/main/close-icon.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#"><img src="images/main/logo.svg" alt=""></a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="main.html">Продукты</a>
+                        <ul>
+                            <li><a href="trust-management.html">Доверительное управление</a></li>
+                            <li><a href="brokerage-service.html">Брокерское обслуживание</a></li>
+                            <li><a href="open-funds.html">Открытые паевые фонды</a></li>
+                        </ul>
+                    </li>
+                    <li class="current"><a href="your-case-full.html">Портфель</a></li>
+                    <li><a href="functions.html">функции</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li><a href="account-customer-questionnaire.html">аккаунт</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-exit">
+                <div class="sidebar__line"></div>
+                <a href="#">
+                    <img src="images/main/logout-icon.svg" alt="">
+                    <span>Выход из кабинета</span>
+                </a>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Связь с финансовым советником</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                    <a href="#" class="sidebar__btn">Назначить встречу</a>
+                </div>
+            </div>
+
+            <div class="sidebar__contacts">
+                <div class="sidebar__line"></div>
+                <div class="sidebar__contacts-title">Техническая поддержка аккаунта</div>
+                <a class="sidebar__contacts-link" href="tel:+74959889821">+7 (495) 988 98 21</a>
+                <div class="sidebar__buttons">
+                    <a href="#" class="sidebar__btn">Задать вопрос</a>
+                    <a href="#" class="sidebar__btn">Написать письмо</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="content">
+            <div class="wrapper">
+                <div class="user user_fixed flex">
+                    <div class="user__name">
+                        <img src="images/main/user-icon.svg" alt="">
+                        <span>Кондратий Валерьевич <strong>Гребенщиков</strong></span>
+                    </div>
+                    <div class="user__info flex">
+                        <div class="user__balance flex">
+                            <span class="user__caption">Ваш портфель:</span>
+                            <span class="user__total">375 000 руб</span>
+                            <span class="user__point">•</span>
+                            <a href="#" class="user__replenish">Пополнить <span>></span></a>
+                        </div>
+                        <a href="#" class="user__messages flex">
+                            <span class="user__caption">Сообщения </span>
+                            <div class="user__messages-icon user__messages-icon_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.47 20.93">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <rect class="user__messages-cls-1" x="0.25" y="5.56" width="20.22" height="15.12" rx="0.44" />
+                                                <path class="user__messages-cls-1" d="M20.47,6l-9.69,9a.62.62,0,0,1-.84,0L.25,6" />
+                                                <line class="user__messages-cls-1" x1="7.88" y1="13.12" x2="0.25" y2="20.24" />
+                                                <line class="user__messages-cls-1" x1="20.47" y1="20.24" x2="12.84" y2="13.12" />
+                                                <circle class="user__messages-new-message" cx="20.47" cy="6" r="5" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="user__exit flex">
+                            <span class="user__caption">Выход</span>
+                            <img src="images/main/exit-icon.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="top-panel top-panel_ms flex">
+                    <div class="top-panel__title top-panel__title_ms">
+                        <div class="product-anons-v2__top product-anons-v2__top_white">
+                            <div class="top-panel__title-box">
+                                <div class="top-panel__title-small">Открытые паевые фонды</div>
+                                <strong>Мой сейф</strong>
+                            </div>
+                            <div class="product-anons-v2__yield">9–10%</div>
+                            <div class="product-anons-v2__caption">целевая доходность</div>
+                            <!--div class="product-anons-v2__small">целевая доходность</div-->
+                            <div class="product-anons-v2__img product-anons-v2__img_desktop product-anons-v2__img_right">
+                                <img src="images/your-case-open-funds-my-safe-product-details/icon-desktop.png" alt="">
+                            </div>
+                            <div class="product-anons-v2__img product-anons-v2__img_planshet">
+                                <img src="images/your-case-open-funds-my-safe-product-details/icon-planshet.png" alt="">
+                            </div>
+                            <div class="product-anons-v2__img product-anons-v2__img_mobile">
+                                <img src="images/your-case-open-funds-my-safe-product-details/icon-desktop.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-panel__links flex">
+                        <a href="define-product.html" class="top-panel__link">
+                            <img src="images/main/header-icon-1.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Подобрать<br> продукты</div>
+                        </a>
+                        <a href="#" class="top-panel__link">
+                            <img src="images/main/header-icon-2.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Что такое<br> ИИС</div>
+                        </a>
+                        <a href="product-catalog.html" class="top-panel__link">
+                            <img src="images/main/header-icon-3.svg" class="top-panel__img" alt="">
+                            <div class="top-panel__caption">Каталог<br> продуктов</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!--- product-anons-v2 END --->
+
+                <div class="products-block product-anons-v2 products-block_gray flex pd pd_ms">
+                    <div class="product-anons-v2__characteristics pd__block">
+                        <div class="pd__desc">
+                            <div class="pd__desc-text">Стратегия фонда «Мой сейф» относится к числу наиболее консервативных. Она основана на инвестировании в облигации крупнейших российских компаний с высоким рейтингом надежности и облигации федерального займа (ОФЗ).</div>
+                        </div>
+                        <div class="pd__description flex">
+                            <div class="pd__description-items pd__description-items_ms">
+                                <span>текущий<br> Баланс</span>
+                                <strong>201 144 ₽</strong>
+                            </div>
+                            <div class="pd__description-items pd__description-items_ms">
+                                <span>Расчетная<br> стоимость пая</span>
+                                <strong>10 057,22 ₽</strong>
+                            </div>
+                            <div class="pd__description-items pd__description-items_ms">
+                                <span>Количество<br> приобретенных паев</span>
+                                <strong>20 шт.</strong>
+                            </div>
+                        </div>
+                        <a href="requisites.html" class="du-list__btn btn btn_darkgray">Пополнить</a>
+                    </div>
+                    <div class="product-anons-v2__characteristics pd__block">
+                        <div class="pd__block-list">
+                            <div class="pd__block-items flex">
+                                <span>Номер договора</span>
+                                <strong>ХХХ ХХХ ХХХ</strong>
+                            </div>
+                            <div class="pd__block-items flex">
+                                <span>Дата открытия счета</span>
+                                <strong>01.04.2019</strong>
+                            </div>
+                            <div class="pd__block-items flex">
+                                <span>Валюта</span>
+                                <strong>
+                                    <p>RUB</p>
+                                </strong>
+                            </div>
+                            <div class="pd__block-items flex">
+                                <span>целевая доходность</span>
+                                <strong>9–10%</strong>
+                            </div>
+                            <div class="pd__block-items pd__block-items_tariffs flex">
+                                <span>Наши комиссии</span>
+                                <a href="#" target="_blank" class="product-anons-v2__tariffs-btn" data-src="#info-modal" data-fancybox data-modal="true">
+                                    <img src="images/brokerage-service-base-rate/PDF-icon.svg" alt="">
+                                    <span>Посмотреть<br>комиссии</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-anons-v2__characteristics pd__block-big flex">
+                        <div class="pd__description-items pd__description-items_bo">
+                            <span>Стоимость чистых активов фонда</span>
+                            <strong>22 202 937,36 ₽</strong>
+                            <div>Данные актуальны на: <span>08.11.2018</span></div>
+                        </div>
+                         <div class="pd__description-items pd__description-items_bo">
+                            <span>Общее количество паев фонда</span>
+                            <strong>2 207 шт.</strong>
+                            <div>Данные актуальны на: <span>08.11.2018</span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="products-block ycf ycf_top">
+                    <div class="ycf__body flex">
+                        <div class="ycf__coll-pd">
+                            <div class="ycf__coll-title settings__title--js  active">
+                                <span>Структура и стоимость портфеля, руб.</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"/></g></g></svg>
+                                </i>
+                            </div>
+                            <div class="ycf__content settings__items--js settings__items_hide active">
+                                <div class="ycf__date ycf__date_items flex">
+                                    <span>Данные актуальны на:</span>
+                                    <strong>08.11.2018</strong>
+                                </div>
+                                <div class="ycf__chart-big">
+                                    <canvas id="myChartPD"></canvas>
+                                    <div class="ycf__chart-price">201 144<br> руб.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ycf__coll-pd">
+                            <div class="ycf__coll-title settings__title--js  active">
+                                <span>Список активов и эмитентов</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"/></g></g></svg>
+                                </i>
+                            </div>
+                            <div class="ycf__content settings__items--js settings__items_hide active">
+                                <div class="ycf__date ycf__date_items flex">
+                                    <span>Данные актуальны на:</span>
+                                    <strong>08.11.2018</strong>
+                                </div>
+                                <div class="ycf__list">
+                                    <div class="ycf__items flex">
+                                        <div class="ycf__items-block flex">
+                                            <div class="ycf__items-value">10%</div>
+                                            <div class="ycf__items-color" style="background-color: #00a1a7;"></div>
+                                            <div class="ycf__items-name">ПАО «Сургутнефтегаз»</div>
+                                        </div>
+                                        <div class="ycf__items-price">12 500 руб.</div>
+                                    </div>
+                                    <div class="ycf__items flex">
+                                        <div class="ycf__items-block flex">
+                                            <div class="ycf__items-value">10%</div>
+                                            <div class="ycf__items-color" style="background-color: #00b453;"></div>
+                                            <div class="ycf__items-name">ПАО «Магнит»</div>
+                                        </div>
+                                        <div class="ycf__items-price">12 500 руб.</div>
+                                    </div>
+                                    <div class="ycf__items flex">
+                                        <div class="ycf__items-block flex">
+                                            <div class="ycf__items-value">8%</div>
+                                            <div class="ycf__items-color" style="background-color: #9b6d8c;"></div>
+                                            <div class="ycf__items-name">ПАО «Сбербанк»</div>
+                                        </div>
+                                        <div class="ycf__items-price">10 000 руб.</div>
+                                    </div>
+                                    <div class="ycf__items flex">
+                                        <div class="ycf__items-block flex">
+                                            <div class="ycf__items-value">8%</div>
+                                            <div class="ycf__items-color" style="background-color: #e5dc3b;"></div>
+                                            <div class="ycf__items-name">Банк ВТБ (ПАО)</div>
+                                        </div>
+                                        <div class="ycf__items-price">10 000 руб.</div>
+                                    </div>
+                                    <div class="ycf__items flex">
+                                        <div class="ycf__items-block flex">
+                                            <div class="ycf__items-value">8%</div>
+                                            <div class="ycf__items-color" style="background-color: #28a8c6;"></div>
+                                            <div class="ycf__items-name">ПАО «Московская биржа»</div>
+                                        </div>
+                                        <div class="ycf__items-price">10 000 руб.</div>
+                                    </div>
+                                    <div class="ycf__items flex">
+                                        <div class="ycf__items-block flex">
+                                            <div class="ycf__items-value">8%</div>
+                                            <div class="ycf__items-color" style="background-color: #347272;"></div>
+                                            <div class="ycf__items-name">ПАО «Интер РАО»</div>
+                                        </div>
+                                        <div class="ycf__items-price">10 000 руб.</div>
+                                    </div>
+                                    <div class="ycf__items flex">
+                                        <div class="ycf__items-block flex">
+                                            <div class="ycf__items-value">8%</div>
+                                            <div class="ycf__items-color" style="background-color: #dbadc7;"></div>
+                                            <div class="ycf__items-name">ПАО «НК «Роснефть»</div>
+                                        </div>
+                                        <div class="ycf__items-price">10 000 руб.</div>
+                                    </div>
+                                    <div class="ycf__items flex">
+                                        <div class="ycf__items-block flex">
+                                            <div class="ycf__items-value">8%</div>
+                                            <div class="ycf__items-color" style="background-color: #36ad8a;"></div>
+                                            <div class="ycf__items-name">ПАО «Группа компаний ПИК»</div>
+                                        </div>
+                                        <div class="ycf__items-price">10 000 руб.</div>
+                                    </div>
+                                    <div class="ycf__items flex">
+                                        <div class="ycf__items-block flex">
+                                            <div class="ycf__items-value">8%</div>
+                                            <div class="ycf__items-color" style="background-color: #ff6d4a;"></div>
+                                            <div class="ycf__items-name">ПАО «Московская биржа»</div>
+                                        </div>
+                                        <div class="ycf__items-price">10 000 руб.</div>
+                                    </div>
+                                    <div class="ycf__items flex">
+                                        <div class="ycf__items-block flex">
+                                            <div class="ycf__items-value">8%</div>
+                                            <div class="ycf__items-color" style="background-color: #969696;"></div>
+                                            <div class="ycf__items-name">ПАО «Интер РАО»</div>
+                                        </div>
+                                        <div class="ycf__items-price">10 000 руб.</div>
+                                    </div>
+                                    <div class="ycf__items flex">
+                                        <div class="ycf__items-block flex">
+                                            <div class="ycf__items-value">8%</div>
+                                            <div class="ycf__items-color" style="background-color: #bcbcbc;"></div>
+                                            <div class="ycf__items-name">ПАО «НК «Роснефть»</div>
+                                        </div>
+                                        <div class="ycf__items-price">10 000 руб.</div>
+                                    </div>
+                                    <div class="ycf__items flex">
+                                        <div class="ycf__items-block flex">
+                                            <div class="ycf__items-value">8%</div>
+                                            <div class="ycf__items-color" style="background-color: #909847;"></div>
+                                            <div class="ycf__items-name">Другое</div>
+                                        </div>
+                                        <div class="ycf__items-price">10 000 руб.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ycf__body">
+                        <div class="ycf__coll-big">
+                            <div class="ycf__coll-title ycf__coll-title_visible active">
+                                <span>График динамики стоимости пая</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"/></g></g></svg>
+                                </i>
+                            </div>
+                            <div class="ycf__content ycf__content_visible ycf__content_hide active">
+                                <div class="ycf__display-period">
+                                    <div class="ycf__display-period-title">Выберите период отображения:</div>
+                                    <div class="ycf__display-period-date flex">
+                                        <div class="ycf__display-period-row flex">
+                                            <div class="ycf__display-period-caption">C:</div>
+                                            <input type="text" class="datepicker-here" data-multiple-dates="3" data-multiple-dates-separator=", " data-position='right top' placeholder="18.04.19"/>
+                                        </div>
+                                        <div class="ycf__display-period-row flex">
+                                            <div class="ycf__display-period-caption">До:</div>
+                                            <input type="text" class="datepicker-here" data-multiple-dates="3" data-multiple-dates-separator=", " data-position='right top' placeholder="18.04.19"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ycf__linear">
+                                    <canvas id="linear" class="chartjs-render-monitor"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pd__body flex pd__body_pt_mobile">
+                        <div class="pd__column flex">
+                            <div class="pd__column-icons">
+                                <img src="images/your-case-golden-ratio-product-details/icon.svg" alt="">
+                            </div>
+                            <div class="pd__column-list">
+                                <a href="requisites.html" class="pd__column-link">Пополнить счет</a>
+                                <a href="your-case-open-funds-my-safe-contacts.html" class="pd__column-link">Подписанные документы</a>
+                                <a href="your-case-open-funds-my-safe-input-output.html" class="pd__column-link">Посмотреть ввод/вывод средств</a>
+                                <a href="your-case-open-funds-my-safe-output.html" class="pd__column-link">Заказать вывод средств (погасить паи)</a>
+                                <a href="your-case-open-funds-my-safe-analitics.html" class="pd__column-link">Аналитические обзоры</a>
+                            </div>
+                        </div>
+                        <div class="pd__coll">
+                            <a href="your-case-full.html" class="btn btn_darkgray">
+                                <span>Ваш портфель</span>
+                            </a>
+                            <a href="main.html" class="btn btn_gray">
+                                <i>
+                                    <img src="images/main-page/icon-3.svg" alt="">
+                                </i>
+                                <span>Другие продукты</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--- product-anons-v2 END --->
+
+                <div class="products-block products-block_gray products-block_pt">
+                    <div class="du-list flex">
+                        <div class="offers flex">
+                            <div class="main__title">Предложения сезона</div>
+                            <div class="offers__body">
+                                <div class="offers__slick">
+                                    <div class="offers__slide">
+                                        <div class="du-list__item du-list__item_offers">
+                                            <div class="iis-icon">
+                                                <img src="images/main/IIS.svg" alt="">
+                                            </div>
+                                            <a class="du-list__contanier" href="trust-management-move-up.html">
+                                                <div class="du-list__name">Движение вверх</div>
+                                                <div class="du-list__subtitle">Доверительное управление</div>
+                                                <div class="du-list__yield">
+                                                    <span>20–25%</span>
+                                                    <div class="du-list__caption">целевая<br> доходность</div>
+                                                </div>
+                                                <div class="du-list__btn btn btn_darkgray">Подробнее</div>
+                                                <div class="du-list__img du-list__img_desktop"><img src="images/faq/Slide-1.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_planshet"><img src="images/faq/Slide-1.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/1-mobile.png" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="offers__slide">
+                                        <div class="du-list__item du-list__item_offers">
+                                            <div class="iis-icon">
+                                                <img src="images/main/IIS.svg" alt="">
+                                            </div>
+                                            <a class="du-list__contanier" href="brokerage-service-base-rate.html">
+                                                <div class="du-list__name">Базовый тариф</div>
+                                                <div class="du-list__subtitle">Брокерское обслуживание</div>
+                                                <div class="du-list__currency flex">
+                                                    <div class="du-list__yield">
+                                                        <span>
+                                                            <strong>0</strong>
+                                                        </span>
+                                                        <div class="du-list__caption">минимальная<br> сумма, руб.</div>
+                                                    </div>
+                                                    <div class="main__currency flex">
+                                                        <div class="main__currency-coll flex">
+                                                            <div class="main__currency-coll_icons">₽</div>
+                                                            <div class="main__currency-coll_name">RUB</div>
+                                                        </div>
+                                                        <div class="main__currency-coll flex">
+                                                            <div class="main__currency-coll_icons">$</div>
+                                                            <div class="main__currency-coll_name">USD</div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="du-list__btn btn btn_darkgray">Подробнее</div>
+                                                <div class="du-list__img du-list__img_desktop"><img src="images/faq/Slide-2.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_planshet"><img src="images/faq/Slide-2.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_mobile"><img src="images/brokerage-service/Basic-icon-mobile.png" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="offers__slide">
+                                        <div class="du-list__item du-list__item_offers">
+                                            <a class="du-list__contanier" href="trust-management-dividend-strategy.html">
+                                                <div class="du-list__name">Дивидендная стратегия</div>
+                                                <div class="du-list__subtitle">Доверительное управление</div>
+                                                <div class="du-list__yield">
+                                                    <span>13–17%</span>
+                                                    <div class="du-list__caption">целевая<br> доходность</div>
+                                                </div>
+                                                <div class="du-list__btn btn btn_darkgray">Подробнее</div>
+                                                <div class="du-list__img du-list__img_desktop"><img src="images/faq/Slide-3.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_planshet"><img src="images/faq/Slide-3.png" alt=""></div>
+                                                <div class="du-list__img du-list__img_mobile"><img src="images/trust-management/5-mobile.png" alt=""></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="arrow arrow_prev">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"/></g></g></svg>
+                                    </i>
+                                </a>
+                                <a href="javascript:void(0)" class="arrow arrow_next">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.09 29.13"><defs><style>.cls-1{fill:none;stroke:#999;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>Ресурс 16</title><g id="Слой_2" data-name="Слой 2"><g id="Content"><polyline class="cls-1" points="14.83 28.86 0.53 14.56 14.83 0.27"/></g></g></svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-products">
+                            <div class="main__title">Подобрать продукт</div>
+                            <div class="du-list__item du-list__item_main du-list__item_dark">
+                                <a class="du-list__contanier" href="define-product.html">
+                                    <div class="du-list__name">Определите свой<br> инвестиционный профиль<br> и мы предложим наиболее<br> подходящие для вас продукты</div>
+                                    <div class="du-list__btn btn btn_darkgray">Подобрать продукт</div>
+                                    <div class="du-list__img du-list__img_desktop"><img src="images/faq/7.svg" alt=""></div>
+                                    <div class="du-list__img du-list__img_planshet"><img src="images/faq/7.svg" alt=""></div>
+                                    <div class="du-list__img du-list__img_mobile"><img src="images/faq/7.svg" alt=""></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-bottom">
+                <div class="menu-bottom__wrapper">
+                    <ul>
+                        <li><a href="#">Продукты</a></li>
+                        <li><a href="#">Портфель</a></li>
+                        <li><a href="#">Функции</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Аккаунт</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="footer__content flex">
+                        <div class="footer__links">
+                            <ul>
+                                <li><a href="product-catalog.html">Каталог продуктов</a></li>
+                                <li class="hide_mobile">|</li>
+                                <li><a href="">Конфиденциальность</a></li>
+                                <li class="show_pc">|</li>
+                                <li>Техническая поддержка: <span class="br-mobile"></span> <a href="tel:+74959889821">+7 (495) 988 98 21</a> <span class="gray">•</span> <a href="mailto:MAIL@QBFIN.RU">MAIL@QBFIN.RU</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__copiright">QBF • 2019</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-top">
+        <a href="#"><img src="images/main/scroll-top.png" alt=""></a>
+    </div>
+
+<div id="info-modal" style="display: none;">
+    <div class="info-modal">
+        <div class="info-modal__top" style="background-color: #82b13e;">
+            <div class="info-modal__subtitle">Открытые паевые фонды</div>
+            <div class="info-modal__title">Мой сейф</div>
+        </div>
+        <div class="info-modal__body">
+            <div class="info-modal__content">
+                <div class="info-modal__caption">Наши комиссии</div>
+                <div class="info-modal__description" style="color: #82b13e;">
+                    <span>Комиссия за управление: </span><strong>0,75%</strong>
+                </div>
+                <div class="info-modal__table">
+                    <div class="info-modal__td">
+                        <div class="info-modal__table-title" style="color: #82b13e;">Комиссия при приобретении паев <small>(надбавка)</small></div>
+                        <div class="info-modal__box">
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>при объеме до 1 000 000 руб.</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>0,25%</small>
+                                </div>
+                            </div>
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>при объеме от 1 000 000 руб.</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>0%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-modal__td">
+                        <div class="info-modal__table-title" style="color: #82b13e;">Комиссия при продаже паев <small>(скидка)</small></div>
+                        <div class="info-modal__box">
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>до 12 мес.</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>0,5%</small>
+                                </div>
+                            </div>
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>более 12 мес.</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>0%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-modal__td">
+                        <div class="info-modal__table-title" style="color: #82b13e;">Иные комиссии</div>
+                        <div class="info-modal__box">
+                            <div class="info-modal__items flex">
+                                <div class="info-modal__coll">
+                                    <strong>от среднегодовой стоимости чистых активов</strong>
+                                </div>
+                                <div class="info-modal__coll">
+                                    <small>не более 3%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="invest-modal__button">
+            <a href="javascript:void(0)" class="btn btn_small btn_gray">Закрыть</a>
+        </div>
+    </div>
+</div><!-- end info-modal -->
+
+</body>
+
+</html>
